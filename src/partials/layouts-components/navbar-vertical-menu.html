@@ -1,101 +1,190 @@
 <!-- Dashboards -->
 <li class="navbar-vertical-aside-has-menu @@if(category=='dashboards'){show}">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='dashboards'){active}" href="javascript:;" title="Dashboards">
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='dashboards'){active}
+    "
+    href="javascript:;"
+    title="Dashboards"
+  >
     <i class="tio-home-vs-1-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Dashboards</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Dashboards</span
+    >
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
-      <a class="nav-link @@if(link=='index.html'){active}" href="@@autopath/index.html" title="Default">
+      <a
+        class="nav-link @@if(link=='index.html'){active}"
+        href="@@autopath/index.html"
+        title="Default"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">Default</span>
+        <span class="text-truncate">Pre-funding</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link @@if(link=='dashboard-alternative.html'){active}" href="@@autopath/dashboard-alternative.html" title="Alternative">
+      <a
+        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
+        href="@@autopath/dashboard-alternative.html"
+        title="Alternative"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">Alternative</span>
+        <span class="text-truncate">During </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
+        href="@@autopath/dashboard-alternative.html"
+        title="Alternative"
+      >
+        <span class="tio-circle nav-indicator-icon"></span>
+        <span class="text-truncate">Post funding</span>
       </a>
     </li>
   </ul>
 </li>
 <!-- End Dashboards -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <small class="nav-subtitle" title="Pages">Pages</small>
   <small class="tio-more-horizontal nav-subtitle-replacer"></small>
 </li>
 
-<!-- Pages -->
-<li class="navbar-vertical-aside-has-menu @@if(category=='pages'){show}">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='pages'){active}" href="javascript:;" title="Pages">
+<-- Pages -->
+<!-- <li class="navbar-vertical-aside-has-menu @@if(category=='pages'){show}">
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='pages'){active}
+    "
+    href="javascript:;"
+    title="Pages"
+  >
     <i class="tio-pages-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Pages</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Pages</span
+    >
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="navbar-vertical-aside-has-menu @@if(subcategory=='users'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Users">
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Users"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Users</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='users.html'){active}" href="@@autopath/users.html" title="Overview">
+          <a
+            class="nav-link @@if(link=='users.html'){active}"
+            href="@@autopath/users.html"
+            title="Overview"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Overview</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='users-leaderboard.html'){active}" href="@@autopath/users-leaderboard.html" title="Leaderboard">
+          <a
+            class="nav-link @@if(link=='users-leaderboard.html'){active}"
+            href="@@autopath/users-leaderboard.html"
+            title="Leaderboard"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Leaderboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='users-add-user.html'){active}" href="@@autopath/users-add-user.html" title="Add User">
+          <a
+            class="nav-link @@if(link=='users-add-user.html'){active}"
+            href="@@autopath/users-add-user.html"
+            title="Add User"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
-            <span class="text-truncate">Add User <span class="badge badge-info badge-pill ml-1">Hot</span></span>
+            <span class="text-truncate"
+              >Add User
+              <span class="badge badge-info badge-pill ml-1">Hot</span></span
+            >
           </a>
         </li>
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(subcategory=='user-profile'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="User Profile">
+    <li
+      class="
+        navbar-vertical-aside-has-menu
+        @@if(subcategory=='user-profile'){show}
+      "
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="User Profile"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">User Profile <span class="badge badge-primary badge-pill ml-1">5</span></span>
+        <span class="text-truncate"
+          >User Profile
+          <span class="badge badge-primary badge-pill ml-1">5</span></span
+        >
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='user-profile.html'){active}" href="@@autopath/user-profile.html" title="Profile">
+          <a
+            class="nav-link @@if(link=='user-profile.html'){active}"
+            href="@@autopath/user-profile.html"
+            title="Profile"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Profile</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='user-profile-teams.html'){active}" href="@@autopath/user-profile-teams.html" title="Teams">
+          <a
+            class="nav-link @@if(link=='user-profile-teams.html'){active}"
+            href="@@autopath/user-profile-teams.html"
+            title="Teams"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Teams</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='user-profile-projects.html'){active}" href="@@autopath/user-profile-projects.html" title="Projects">
+          <a
+            class="nav-link @@if(link=='user-profile-projects.html'){active}"
+            href="@@autopath/user-profile-projects.html"
+            title="Projects"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Projects</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='user-profile-connections.html'){active}" href="@@autopath/user-profile-connections.html" title="Connections">
+          <a
+            class="nav-link @@if(link=='user-profile-connections.html'){active}"
+            href="@@autopath/user-profile-connections.html"
+            title="Connections"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Connections</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='user-profile-my-profile.html'){active}" href="@@autopath/user-profile-my-profile.html" title="My Profile">
+          <a
+            class="nav-link @@if(link=='user-profile-my-profile.html'){active}"
+            href="@@autopath/user-profile-my-profile.html"
+            title="My Profile"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">My Profile</span>
           </a>
@@ -103,33 +192,55 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(subcategory=='account'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Account">
+    <li
+      class="navbar-vertical-aside-has-menu @@if(subcategory=='account'){show}"
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Account"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Account</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='account-settings.html'){active}" href="@@autopath/account-settings.html" title="Settings">
+          <a
+            class="nav-link @@if(link=='account-settings.html'){active}"
+            href="@@autopath/account-settings.html"
+            title="Settings"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Settings</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='account-billing.html'){active}" href="@@autopath/account-billing.html" title="Billing">
+          <a
+            class="nav-link @@if(link=='account-billing.html'){active}"
+            href="@@autopath/account-billing.html"
+            title="Billing"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Billing</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='account-invoice.html'){active}" href="@@autopath/account-invoice.html" title="Invoice">
+          <a
+            class="nav-link @@if(link=='account-invoice.html'){active}"
+            href="@@autopath/account-invoice.html"
+            title="Invoice"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Invoice</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='account-api-keys.html'){active}" href="@@autopath/account-api-keys.html" title="API Keys">
+          <a
+            class="nav-link @@if(link=='account-api-keys.html'){active}"
+            href="@@autopath/account-api-keys.html"
+            title="API Keys"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">API Keys</span>
           </a>
@@ -137,41 +248,81 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(subcategory=='ecommerce'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="E-commerce">
+    <li
+      class="
+        navbar-vertical-aside-has-menu
+        @@if(subcategory=='ecommerce'){show}
+      "
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="E-commerce"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">E-commerce</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='ecommerce.html'){active}" href="@@autopath/ecommerce.html" title="Overview">
+          <a
+            class="nav-link @@if(link=='ecommerce.html'){active}"
+            href="@@autopath/ecommerce.html"
+            title="Overview"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Overview</span>
           </a>
         </li>
 
-        <li class="navbar-vertical-aside-has-menu @@if(category=='ecommerce'){show}">
-          <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Products">
+        <li
+          class="
+            navbar-vertical-aside-has-menu
+            @@if(category=='ecommerce'){show}
+          "
+        >
+          <a
+            class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+            href="javascript:;"
+            title="Products"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Products</span>
           </a>
 
           <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-products.html'){active}" href="@@autopath/ecommerce-products.html" title="Products">
+              <a
+                class="nav-link @@if(link=='ecommerce-products.html'){active}"
+                href="@@autopath/ecommerce-products.html"
+                title="Products"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Products</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-product-details.html'){active}" href="@@autopath/ecommerce-product-details.html" title="Product Details">
+              <a
+                class="
+                  nav-link
+                  @@if(link=='ecommerce-product-details.html'){active}
+                "
+                href="@@autopath/ecommerce-product-details.html"
+                title="Product Details"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Product Details</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-add-product.html'){active}" href="@@autopath/ecommerce-add-product.html" title="Add Product">
+              <a
+                class="
+                  nav-link
+                  @@if(link=='ecommerce-add-product.html'){active}
+                "
+                href="@@autopath/ecommerce-add-product.html"
+                title="Add Product"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Add Product</span>
               </a>
@@ -179,21 +330,41 @@
           </ul>
         </li>
 
-        <li class="navbar-vertical-aside-has-menu @@if(category=='ecommerce'){show}">
-          <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Orders">
+        <li
+          class="
+            navbar-vertical-aside-has-menu
+            @@if(category=='ecommerce'){show}
+          "
+        >
+          <a
+            class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+            href="javascript:;"
+            title="Orders"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Orders</span>
           </a>
 
           <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-orders.html'){active}" href="@@autopath/ecommerce-orders.html" title="Orders">
+              <a
+                class="nav-link @@if(link=='ecommerce-orders.html'){active}"
+                href="@@autopath/ecommerce-orders.html"
+                title="Orders"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Orders</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-order-details.html'){active}" href="@@autopath/ecommerce-order-details.html" title="Order Details">
+              <a
+                class="
+                  nav-link
+                  @@if(link=='ecommerce-order-details.html'){active}
+                "
+                href="@@autopath/ecommerce-order-details.html"
+                title="Order Details"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Order Details</span>
               </a>
@@ -201,27 +372,54 @@
           </ul>
         </li>
 
-        <li class="navbar-vertical-aside-has-menu @@if(category=='ecommerce'){show}">
-          <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Customers">
+        <li
+          class="
+            navbar-vertical-aside-has-menu
+            @@if(category=='ecommerce'){show}
+          "
+        >
+          <a
+            class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+            href="javascript:;"
+            title="Customers"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Customers</span>
           </a>
 
           <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-customers.html'){active}" href="@@autopath/ecommerce-customers.html" title="Customers">
+              <a
+                class="nav-link @@if(link=='ecommerce-customers.html'){active}"
+                href="@@autopath/ecommerce-customers.html"
+                title="Customers"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Customers</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-customer-details.html'){active}" href="@@autopath/ecommerce-customer-details.html" title="Customer Details">
+              <a
+                class="
+                  nav-link
+                  @@if(link=='ecommerce-customer-details.html'){active}
+                "
+                href="@@autopath/ecommerce-customer-details.html"
+                title="Customer Details"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Customer Details</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link @@if(link=='ecommerce-add-customers.html'){active}" href="@@autopath/ecommerce-add-customers.html" title="Add Customers">
+              <a
+                class="
+                  nav-link
+                  @@if(link=='ecommerce-add-customers.html'){active}
+                "
+                href="@@autopath/ecommerce-add-customers.html"
+                title="Add Customers"
+              >
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">Add Customers</span>
               </a>
@@ -230,13 +428,21 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link @@if(link=='ecommerce-manage-reviews.html'){active}" href="@@autopath/ecommerce-manage-reviews.html" title="Manage Reviews">
+          <a
+            class="nav-link @@if(link=='ecommerce-manage-reviews.html'){active}"
+            href="@@autopath/ecommerce-manage-reviews.html"
+            title="Manage Reviews"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Manage Reviews</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='ecommerce-checkout.html'){active}" href="@@autopath/ecommerce-checkout.html" title="Checkout">
+          <a
+            class="nav-link @@if(link=='ecommerce-checkout.html'){active}"
+            href="@@autopath/ecommerce-checkout.html"
+            title="Checkout"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Checkout</span>
           </a>
@@ -244,21 +450,35 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(subcategory=='projects'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Projects">
+    <li
+      class="navbar-vertical-aside-has-menu @@if(subcategory=='projects'){show}"
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Projects"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Projects</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='projects.html'){active}" href="@@autopath/projects.html" title="Overview">
+          <a
+            class="nav-link @@if(link=='projects.html'){active}"
+            href="@@autopath/projects.html"
+            title="Overview"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Overview</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='projects-timeline.html'){active}" href="@@autopath/projects-timeline.html" title="Timeline">
+          <a
+            class="nav-link @@if(link=='projects-timeline.html'){active}"
+            href="@@autopath/projects-timeline.html"
+            title="Timeline"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Timeline</span>
           </a>
@@ -266,39 +486,68 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(subcategory=='project'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Project">
+    <li
+      class="navbar-vertical-aside-has-menu @@if(subcategory=='project'){show}"
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Project"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Project</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='project.html'){active}" href="@@autopath/project.html" title="Overview">
+          <a
+            class="nav-link @@if(link=='project.html'){active}"
+            href="@@autopath/project.html"
+            title="Overview"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Overview</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='project-files.html'){active}" href="@@autopath/project-files.html" title="Files">
+          <a
+            class="nav-link @@if(link=='project-files.html'){active}"
+            href="@@autopath/project-files.html"
+            title="Files"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
-            <span class="text-truncate">Files <span class="badge badge-info badge-pill ml-1">Hot</span></span>
+            <span class="text-truncate"
+              >Files
+              <span class="badge badge-info badge-pill ml-1">Hot</span></span
+            >
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='project-activity.html'){active}" href="@@autopath/project-activity.html" title="Activity">
+          <a
+            class="nav-link @@if(link=='project-activity.html'){active}"
+            href="@@autopath/project-activity.html"
+            title="Activity"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Activity</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='project-teams.html'){active}" href="@@autopath/project-teams.html" title="Teams">
+          <a
+            class="nav-link @@if(link=='project-teams.html'){active}"
+            href="@@autopath/project-teams.html"
+            title="Teams"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Teams</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='project-settings.html'){active}" href="@@autopath/project-settings.html" title="Settings">
+          <a
+            class="nav-link @@if(link=='project-settings.html'){active}"
+            href="@@autopath/project-settings.html"
+            title="Settings"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Settings</span>
           </a>
@@ -307,74 +556,176 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link @@if(link=='referrals.html'){active}" href="@@autopath/referrals.html" title="Referrals">
+      <a
+        class="nav-link @@if(link=='referrals.html'){active}"
+        href="@@autopath/referrals.html"
+        title="Referrals"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Referrals</span>
       </a>
     </li>
   </ul>
-</li>
+</li>  -->
 <!-- End Pages -->
 
 <!-- Apps -->
 <li class="navbar-vertical-aside-has-menu @@if(category=='apps'){show}">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='apps'){active}" href="javascript:;" title="Apps">
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='apps'){active}
+    "
+    href="javascript:;"
+    title="Apps"
+  >
     <i class="tio-apps nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Apps <span class="badge badge-info badge-pill ml-1">Hot</span></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Apps <span class="badge badge-info badge-pill ml-1">Hot</span></span
+    >
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
-      <a class="nav-link @@if(link=='apps-kanban.html'){active}" href="@@autopath/apps-kanban.html" title="Kanban">
+      <a
+        class="nav-link @@if(link=='apps-kanban.html'){active}"
+        href="@@autopath/apps-kanban.html"
+        title="Kanban"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">Kanban</span>
+        <span class="text-truncate">Planning</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link @@if(link=='apps-calendar.html'){active}" href="@@autopath/apps-calendar.html" title="Calendar">
+      <a
+        class="nav-link @@if(link=='apps-kanban.html'){active}"
+        href="@@autopath/apps-kanban.html"
+        title="Kanban"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">Calendar <span class="badge badge-info badge-pill ml-1">New</span></span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @@if(link=='apps-invoice-generator.html'){active}" href="@@autopath/apps-invoice-generator.html" title="Invoice Generator">
-        <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">Invoice Generator</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link @@if(link=='apps-file-manager.html'){active}" href="@@autopath/apps-file-manager.html" title="File Manager">
-        <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">File Manager</span>
+        <span class="text-truncate">Targeting</span>
       </a>
     </li>
   </ul>
 </li>
 <!-- End Apps -->
 
-<!-- Authentication -->
-<li class="navbar-vertical-aside-has-menu @@if(category=='authentication'){show}">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='authentication'){active}" href="javascript:;" title="Authentication">
+<!-- User Profile -->
+<li class="nav-item @@if(category=='components'){active}">
+  <a
+    class="nav-link @@if(link=='user-profile-my-profile.html'){active}"
+    href="@@autopath/user-profile-my-profile.html"
+    title="My Profile"
+  >
+    <i class="tio-layers-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >User Profile</span
+    >
+  </a>
+</li>
+<!--Account-->
+<li class="navbar-vertical-aside-has-menu @@if(category=='dashboards'){show}">
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='dashboards'){active}
+    "
+    href="javascript:;"
+    title="Dashboards"
+  >
+    <i class="tio-home-vs-1-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Account</span
+    >
+  </a>
+
+  <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+    <li class="nav-item">
+      <a
+        class="nav-link @@if(link=='index.html'){active}"
+        href="@@autopath/index.html"
+        title="Default"
+      >
+        <span class="tio-circle nav-indicator-icon"></span>
+        <span class="text-truncate">Settings</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
+        href="@@autopath/dashboard-alternative.html"
+        title="Alternative"
+      >
+        <span class="tio-circle nav-indicator-icon"></span>
+        <span class="text-truncate">Billing</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
+        href="@@autopath/dashboard-alternative.html"
+        title="Alternative"
+      >
+        <span class="tio-circle nav-indicator-icon"></span>
+        <span class="text-truncate">invoice</span>
+      </a>
+    </li>
+  </ul>
+</li>
+<!-- <li
+  class="navbar-vertical-aside-has-menu @@if(category=='authentication'){show}"
+>
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='authentication'){active}
+    "
+    href="javascript:;"
+    title="Authentication"
+  >
     <i class="tio-lock-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Authentication</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >User Profile</span
+    >
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="navbar-vertical-aside-has-menu @@if(category=='signin'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Sign In">
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Sign In"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Sign In</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-signin-basic.html'){active}" href="@@autopath/authentication-signin-basic.html" title="Basic">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-signin-basic.html'){active}
+            "
+            href="@@autopath/authentication-signin-basic.html"
+            title="Basic"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Basic</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-signin-cover.html'){active}" href="@@autopath/authentication-signin-cover.html" title="Cover">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-signin-cover.html'){active}
+            "
+            href="@@autopath/authentication-signin-cover.html"
+            title="Cover"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Cover</span>
           </a>
@@ -383,20 +734,38 @@
     </li>
 
     <li class="navbar-vertical-aside-has-menu @@if(category=='signup'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Sign Up">
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Sign Up"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Sign Up</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-signup-basic.html'){active}" href="@@autopath/authentication-signup-basic.html" title="Basic">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-signup-basic.html'){active}
+            "
+            href="@@autopath/authentication-signup-basic.html"
+            title="Basic"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Basic</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-signup-cover.html'){active}" href="@@autopath/authentication-signup-cover.html" title="Cover">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-signup-cover.html'){active}
+            "
+            href="@@autopath/authentication-signup-cover.html"
+            title="Cover"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Cover</span>
           </a>
@@ -404,21 +773,44 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(category=='reset-password'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Reset Password">
+    <li
+      class="
+        navbar-vertical-aside-has-menu
+        @@if(category=='reset-password'){show}
+      "
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Reset Password"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Reset Password</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-reset-password-basic.html'){active}" href="@@autopath/authentication-reset-password-basic.html" title="Basic">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-reset-password-basic.html'){active}
+            "
+            href="@@autopath/authentication-reset-password-basic.html"
+            title="Basic"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Basic</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-reset-password-cover.html'){active}" href="@@autopath/authentication-reset-password-cover.html" title="Cover">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-reset-password-cover.html'){active}
+            "
+            href="@@autopath/authentication-reset-password-cover.html"
+            title="Cover"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Cover</span>
           </a>
@@ -426,21 +818,44 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(category=='email-verification'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="Email Verification">
+    <li
+      class="
+        navbar-vertical-aside-has-menu
+        @@if(category=='email-verification'){show}
+      "
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="Email Verification"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Email Verification</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-email-verification-basic.html'){active}" href="@@autopath/authentication-email-verification-basic.html" title="Basic">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-email-verification-basic.html'){active}
+            "
+            href="@@autopath/authentication-email-verification-basic.html"
+            title="Basic"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Basic</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-email-verification-cover.html'){active}" href="@@autopath/authentication-email-verification-cover.html" title="Cover">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-email-verification-cover.html'){active}
+            "
+            href="@@autopath/authentication-email-verification-cover.html"
+            title="Cover"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Cover</span>
           </a>
@@ -448,21 +863,44 @@
       </ul>
     </li>
 
-    <li class="navbar-vertical-aside-has-menu @@if(category=='two-step-verification'){show}">
-      <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;" title="2-step Verification">
+    <li
+      class="
+        navbar-vertical-aside-has-menu
+        @@if(category=='two-step-verification'){show}
+      "
+    >
+      <a
+        class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
+        href="javascript:;"
+        title="2-step Verification"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">2-step Verification</span>
       </a>
 
       <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-two-step-verification-basic.html'){active}" href="@@autopath/authentication-two-step-verification-basic.html" title="Basic">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-two-step-verification-basic.html'){active}
+            "
+            href="@@autopath/authentication-two-step-verification-basic.html"
+            title="Basic"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Basic</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link @@if(link=='authentication-two-step-verification-cover.html'){active}" href="@@autopath/authentication-two-step-verification-cover.html" title="Cover">
+          <a
+            class="
+              nav-link
+              @@if(link=='authentication-two-step-verification-cover.html'){active}
+            "
+            href="@@autopath/authentication-two-step-verification-cover.html"
+            title="Cover"
+          >
             <span class="tio-circle-outlined nav-indicator-icon"></span>
             <span class="text-truncate">Cover</span>
           </a>
@@ -471,47 +909,75 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="javascript:;" data-toggle="modal" data-target="#welcomeMessageModal" title="Welcome Message">
+      <a
+        class="nav-link"
+        href="javascript:;"
+        data-toggle="modal"
+        data-target="#welcomeMessageModal"
+        title="Welcome Message"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Welcome Message</span>
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link @@if(link=='error-404.html'){active}" href="@@autopath/error-404.html" title="Error 404">
+      <a
+        class="nav-link @@if(link=='error-404.html'){active}"
+        href="@@autopath/error-404.html"
+        title="Error 404"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Error 404</span>
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link @@if(link=='error-500.html'){active}" href="@@autopath/error-500.html" title="Error 500">
+      <a
+        class="nav-link @@if(link=='error-500.html'){active}"
+        href="@@autopath/error-500.html"
+        title="Error 500"
+      >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Error 500</span>
       </a>
     </li>
   </ul>
-</li>
+</li> -->
 <!-- End Authentication -->
 
-<li class="nav-item @@if(link=='welcome-page.html'){active}">
-  <a class="js-nav-tooltip-link nav-link @@if(link=='welcome-page.html'){active}" href="@@autopath/welcome-page.html" title="Welcome page" data-placement="left">
+<!-- <li class="nav-item @@if(link=='welcome-page.html'){active}">
+  <a
+    class="js-nav-tooltip-link nav-link @@if(link=='welcome-page.html'){active}"
+    href="@@autopath/welcome-page.html"
+    title="Welcome page"
+    data-placement="left"
+  >
     <i class="tio-visible-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Welcome Page</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Welcome Page</span
+    >
   </a>
-</li>
+</li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <small class="nav-subtitle" title="Layouts">Layouts</small>
   <small class="tio-more-horizontal nav-subtitle-replacer"></small>
 </li>
 
 <li class="nav-item @@if(link=='layouts.html'){active}">
-  <a class="js-nav-tooltip-link nav-link @@if(link=='layouts.html'){active}" href="@@autopath/layouts/layouts.html" title="Layouts" data-placement="left">
+  <a
+    class="js-nav-tooltip-link nav-link @@if(link=='layouts.html'){active}"
+    href="@@autopath/layouts/layouts.html"
+    title="Layouts"
+    data-placement="left"
+  >
     <i class="tio-dashboard-vs-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Layouts</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Layouts</span
+    >
   </a>
-</li>
+</li> -->
 
 <li class="nav-item">
   <div class="nav-divider"></div>
@@ -523,16 +989,17 @@
 </li>
 
 <li class="nav-item @@if(category=='documentation'){active}">
-  <a class="js-nav-tooltip-link nav-link" href="@@autopath/documentation/index.html" title="Documentation" data-placement="left">
+  <a
+    class="js-nav-tooltip-link nav-link"
+    href="@@autopath/documentation/index.html"
+    title="Documentation"
+    data-placement="left"
+  >
     <i class="tio-book-opened nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Documentation <span class="badge badge-primary badge-pill ml-1">v1.1</span></span>
-  </a>
-</li>
-
-<li class="nav-item @@if(category=='components'){active}">
-  <a class="js-nav-tooltip-link nav-link" href="@@autopath/documentation/typography.html" title="Components" data-placement="left">
-    <i class="tio-layers-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Components</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Documentation
+      <span class="badge badge-primary badge-pill ml-1">v1.1</span></span
+    >
   </a>
 </li>
 
@@ -542,15 +1009,18 @@
 
 <!-- Front Builder -->
 <li class="nav-item nav-footer-item @@if(category=='components'){active}">
-  <a class="d-none d-md-flex js-hs-unfold-invoker nav-link nav-link-toggle" href="javascript:;"
-     data-hs-unfold-options='{
+  <a
+    class="d-none d-md-flex js-hs-unfold-invoker nav-link nav-link-toggle"
+    href="javascript:;"
+    data-hs-unfold-options='{
        "target": "#styleSwitcherDropdown",
        "type": "css-animation",
        "animationIn": "fadeInRight",
        "animationOut": "fadeOutRight",
        "hasOverlay": true,
        "smartPositionOff": true
-     }'>
+     }'
+  >
     <i class="tio-tune nav-icon"></i>
   </a>
   <a class="d-flex d-md-none nav-link nav-link-toggle" href="javascript:;">
@@ -560,16 +1030,33 @@
 <!-- End Front Builder -->
 
 <!-- Help -->
-<li class="navbar-vertical-aside-has-menu nav-footer-item @@if(category=='help'){show}">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='Help'){active}" href="javascript:;" title="Help">
+<li
+  class="
+    navbar-vertical-aside-has-menu
+    nav-footer-item
+    @@if(category=='help'){show}
+  "
+>
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='Help'){active}
+    "
+    href="javascript:;"
+    title="Help"
+  >
     <i class="tio-home-vs-1-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Help</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Help</span
+    >
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
       <a class="nav-link" href="#" title="Resources &amp; tutorials">
-        <i class="tio-book-outlined dropdown-item-icon"></i> Resources &amp; tutorials
+        <i class="tio-book-outlined dropdown-item-icon"></i> Resources &amp;
+        tutorials
       </a>
     </li>
     <li class="nav-item">
@@ -597,46 +1084,90 @@
 <!-- End Help -->
 
 <!-- Language -->
-<li class="navbar-vertical-aside-has-menu nav-footer-item @@if(category=='language'){show}">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='Language'){active}" href="javascript:;" title="Language">
-    <img class="avatar avatar-xss avatar-circle" src="@@autopath/node_modules/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Language</span>
+<li
+  class="
+    navbar-vertical-aside-has-menu
+    nav-footer-item
+    @@if(category=='language'){show}
+  "
+>
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='Language'){active}
+    "
+    href="javascript:;"
+    title="Language"
+  >
+    <img
+      class="avatar avatar-xss avatar-circle"
+      src="@@autopath/node_modules/flag-icon-css/flags/1x1/us.svg"
+      alt="United States Flag"
+    />
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
+      >Language</span
+    >
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
       <a class="nav-link" href="#" title="English (US)">
-        <img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/node_modules/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+        <img
+          class="avatar avatar-xss avatar-circle mr-2"
+          src="@@autopath/node_modules/flag-icon-css/flags/1x1/us.svg"
+          alt="Flag"
+        />
         English (US)
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" title="English (UK)">
-        <img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/node_modules/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+        <img
+          class="avatar avatar-xss avatar-circle mr-2"
+          src="@@autopath/node_modules/flag-icon-css/flags/1x1/gb.svg"
+          alt="Flag"
+        />
         English (UK)
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" title="Deutsch">
-        <img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/node_modules/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+        <img
+          class="avatar avatar-xss avatar-circle mr-2"
+          src="@@autopath/node_modules/flag-icon-css/flags/1x1/de.svg"
+          alt="Flag"
+        />
         Deutsch
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" title="Dansk">
-        <img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/node_modules/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+        <img
+          class="avatar avatar-xss avatar-circle mr-2"
+          src="@@autopath/node_modules/flag-icon-css/flags/1x1/dk.svg"
+          alt="Flag"
+        />
         Dansk
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" title="Italiano">
-        <img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/node_modules/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+        <img
+          class="avatar avatar-xss avatar-circle mr-2"
+          src="@@autopath/node_modules/flag-icon-css/flags/1x1/it.svg"
+          alt="Flag"
+        />
         Italiano
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" title="中文 (繁體)">
-        <img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/node_modules/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+        <img
+          class="avatar avatar-xss avatar-circle mr-2"
+          src="@@autopath/node_modules/flag-icon-css/flags/1x1/cn.svg"
+          alt="Flag"
+        />
         中文 (繁體)
       </a>
     </li>
