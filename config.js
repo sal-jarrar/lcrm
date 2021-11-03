@@ -24,7 +24,7 @@ module.exports = {
       "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap",
     version: "?v=1.0",
     style: {
-      color: "#377dff", // Primary Color
+      color: "#40C9A7", // Primary Color
       font: "Open Sans", // Primary Font
     },
   },
