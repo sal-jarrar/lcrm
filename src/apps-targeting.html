@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Project | Front - Admin &amp; Dashboard Template</title>
+    <title>Targeting | Front - Admin &amp; Dashboard Template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -69,17 +69,17 @@
     <!-- Navbar Vertical -->
     @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "pages",
-        "subcategory": "project",
-        "link": "project.html"
+        "category": "apps",
+        "subcategory": "",
+        "link": "apps-targeting.html"
       })
     }
 
     @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/compact.html", {
-        "category": "pages",
-        "subcategory": "project",
-        "link": "project.html"
+        "category": "apps",
+        "subcategory": "",
+        "link": "apps-targeting.html"
       })
     }
     <!-- End Navbar Vertical -->
@@ -89,22 +89,21 @@
       <div class="content @@layoutBuilder.header.containerMode">
         <!-- Page Header -->
         <div class="page-header">
-          <div class="media mb-3">
-            <!-- Avatar -->
-            <div class="avatar avatar-xl avatar-4by3 mr-2">
-              <img class="avatar-img" src="@@autopath/assets/svg/brands/guideline.svg" alt="Image Description">
+          <div class="row align-items-end">
+            <div class="col-auto mb-2 mb-sm-0">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-no-gutter">
+                  <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Apps</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Targeting</li>
+                </ol>
+              </nav>
+              <h1 class="page-header-title">Targeting</h1>
             </div>
-            <!-- End Avatar -->
-
-            <div class="media-body">
-              <div class="row">
-                <div class="col-lg mb-3 mb-lg-0">
-                  <h1 class="page-header-title">Cloud computing web service</h1>
-
-                  <div class="row align-items-center">
+            <div class="col-auto mb-2 mb-sm-0 mr-lg-auto">
+              <div class="row align-items-center">
                     <div class="col-auto">
-                      <span>Client:</span>
-                      <a href="#">Htmlstream</a>
+                      <span>Funding Target:</span>
+                      <a href="#">$100,000</a>
                     </div>
 
                     <div class="col-auto">
@@ -118,7 +117,7 @@
                                 "dateFormat": "d/m/Y",
                                 "wrap": true
                               }'>
-                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2020">
+                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="11/3/2021">
                           <div class="input-group-append" data-toggle>
                             <div class="input-group-text">
                               <i class="tio-chevron-down"></i>
@@ -139,7 +138,7 @@
                                   "dropdownAutoWidth": true,
                                   "width": true
                                 }'>
-                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/160x160/img6.jpg" alt="Avatar" /><span class="media-body">Mark Williams</span></span>'>Mark Williams</option>
+                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xs avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">Capital Partners</span></span>'>Capital Partners</option>
                           <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/160x160/img10.jpg" alt="Avatar" /><span class="media-body">Amanda Harvey</span></span>'>Amanda Harvey</option>
                           <option value="owner3" data-option-template='<span class="media align-items-center"><i class="tio-user-outlined text-body mr-2"></i><span class="media-body">Assign to owner</span></span>'>Assign to owner</option>
                         </select>
@@ -186,16 +185,82 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- End Media -->
+            <div class="col-sm-auto mb-2 mb-sm-0">
+              <small class="text-cap mb-2">Team members:</small>
 
-          <!-- Nav -->
-          @@include("@@autopath/partials/layouts-components/nav-menu-project.html", {
-            "link": "project.html"
-          })
-          <!-- End Nav -->
+              <div class="d-flex">
+                <!-- Avatar Group -->
+                <div class="avatar-group avatar-circle mr-3">
+                  <a
+                    class="avatar"
+                    href="user-profile.html"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="clearbnc"
+                  >
+                    <img
+                      class="avatar-img"
+                      src="@@autopath/assets/img/offer-partners/clearbanc.png"
+                      alt="Image Description"
+                    />
+                  </a>
+                  <a
+                    class="avatar"
+                    href="user-profile.html"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="clearco"
+                  >
+                    <img
+                      class="avatar-img"
+                      src="@@autopath/assets/img/offer-partners/clearcoDetail.png"
+                      alt="Image Description"
+                    />
+                  </a>
+                  <a
+                    class="avatar avatar-soft-info"
+                    href="user-profile.html"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="#digitalmarketing"
+                  >
+                    <span class="avatar-initials">
+                      <i class="tio-group-senior"></i>
+                    </span>
+                  </a>
+                  <a
+                    class="avatar"
+                    href="user-profile.html"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="kickpay"
+                  >
+                    <img
+                      class="avatar-img"
+                      src="@@autopath/assets/img/offer-partners/kickpay.png"
+                      alt="Image Description"
+                    />
+                  </a>
+
+                  <a
+                    class="avatar avatar-light avatar-circle"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target="#shareWithPeopleModal"
+                  >
+                    <span class="avatar-initials">+2</span>
+                  </a>
+
+                <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
+                  <i class="tio-share"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- End Page Header -->
+
+        </div>
   <!-- Card -->
   <div class="card mb-3 mb-lg-5">
     <!-- Header -->
@@ -692,7 +757,7 @@
         </div>
         <!-- End Stats -->
 
-      
+
 
         <div class="row">
           <div class="col-lg-5 mb-3 mb-lg-5">
@@ -1429,12 +1494,12 @@
           }).init();
         }
 
-        
+
         // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
         // =======================================================
         var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
 
-        
+
         // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
         // =======================================================
         $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
@@ -1445,42 +1510,42 @@
           }
         });
 
-        
+
         // INITIALIZATION OF UNFOLD
         // =======================================================
         $('.js-hs-unfold-invoker').each(function () {
           var unfold = new HSUnfold($(this)).init();
         });
 
-        
+
         // INITIALIZATION OF FORM SEARCH
         // =======================================================
         $('.js-form-search').each(function () {
           new HSFormSearch($(this)).init()
         });
 
-        
+
         // INITIALIZATION OF SELECT2
         // =======================================================
         $('.js-select2-custom').each(function () {
           var select2 = $.HSCore.components.HSSelect2.init($(this));
         });
 
-        
+
         // INITIALIZATION OF FLATPICKR
         // =======================================================
         $('.js-flatpickr').each(function () {
           $.HSCore.components.HSFlatpickr.init($(this));
         });
 
-        
+
         // INITIALIZATION OF NAV SCROLLER
         // =======================================================
         $('.js-nav-scroller').each(function () {
           new HsNavScroller($(this)).init()
         });
 
-        
+
         // INITIALIZATION OF DATERANGEPICKER
         // =======================================================
         $('.js-daterangepicker').daterangepicker();
@@ -1516,7 +1581,7 @@
 
         cb(start, end);
 
-        
+
         // INITIALIZATION OF CHARTJS
         // =======================================================
         $('.js-chart').each(function () {
@@ -1552,7 +1617,7 @@
           updatingChart.update();
         })
 
-        
+
         // INITIALIZATION OF MATRIX CHARTJS WITH CHARTJS MATRIX PLUGIN
         // =======================================================
         function generateHoursData() {
@@ -1648,14 +1713,14 @@
           }
         });
 
-        
+
         // INITIALIZATION OF CLIPBOARD
         // =======================================================
         $('.js-clipboard').each(function() {
           var clipboard = $.HSCore.components.HSClipboard.init(this);
         });
 
-        
+
         // INITIALIZATION OF CIRCLES
         // =======================================================
         $('.js-circle').each(function () {
