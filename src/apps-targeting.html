@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
   </head>
 
-  <body class="@@if(layoutBuilder.header.layoutMode === 'default'){has-navbar-vertical-aside navbar-vertical-aside-show-xl} @@if(layoutBuilder.sidebarLayout === 'compact'){navbar-vertical-aside-compact-mode} @@if(layoutBuilder.sidebarLayout === 'mini'){navbar-vertical-aside-mini-mode} footer-offset">
+  <body class="@@if(layoutBuilder.header.layoutMode === 'default'){has-navbar-vertical-aside navbar-vertical-aside-show-xl} @@if(layoutBuilder.sidebarLayout === 'compact'){navbar-vertical-aside-compact-mode navbar-vertical-aside-compact-mini-mode} @@if(layoutBuilder.sidebarLayout === 'mini'){navbar-vertical-aside-mini-mode} footer-offset">
     @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.sidebarLayout !== 'mini') {
       <script src="@@autopath/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
     }
@@ -67,13 +67,13 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <!-- Navbar Vertical -->
-    @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
+    <!-- @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "apps",
+        "category": "dashboards",
         "subcategory": "",
-        "link": "apps-targeting.html"
+        "link": "index.html"
       })
-    }
+    } -->
 
     @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/compact.html", {
