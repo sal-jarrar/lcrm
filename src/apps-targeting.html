@@ -90,7 +90,7 @@
         <!-- Page Header -->
         <div class="page-header">
           <div class="row align-items-end">
-            <div class="col-sm mb-2 mb-sm-0">
+            <div class="col-auto mb-2 mb-sm-0">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-no-gutter">
                   <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Apps</a></li>
@@ -99,7 +99,92 @@
               </nav>
               <h1 class="page-header-title">Targeting</h1>
             </div>
+            <div class="col-auto mb-2 mb-sm-0 mr-lg-auto">
+              <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span>Funding Target:</span>
+                      <a href="#">$100,000</a>
+                    </div>
 
+                    <div class="col-auto">
+                      <div class="row align-items-center g-0">
+                        <div class="col-auto">Due date:</div>
+
+                        <!-- Flatpickr -->
+                        <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless col input-group input-group-sm"
+                              data-hs-flatpickr-options='{
+                                "appendTo": "#projectDeadlineFlatpickr",
+                                "dateFormat": "d/m/Y",
+                                "wrap": true
+                              }'>
+                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="11/3/2021">
+                          <div class="input-group-append" data-toggle>
+                            <div class="input-group-text">
+                              <i class="tio-chevron-down"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Flatpickr -->
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <!-- Select -->
+                      <div class="select2-custom">
+                        <select class="js-select2-custom custom-select-sm" size="1" style="opacity: 0;" id="ownerLabel"
+                                data-hs-select2-options='{
+                                  "minimumResultsForSearch": "Infinity",
+                                  "customClass": "custom-select custom-select-sm custom-select-borderless pl-0",
+                                  "dropdownAutoWidth": true,
+                                  "width": true
+                                }'>
+                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xs avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">Capital Partners</span></span>'>Capital Partners</option>
+                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/160x160/img10.jpg" alt="Avatar" /><span class="media-body">Amanda Harvey</span></span>'>Amanda Harvey</option>
+                          <option value="owner3" data-option-template='<span class="media align-items-center"><i class="tio-user-outlined text-body mr-2"></i><span class="media-body">Assign to owner</span></span>'>Assign to owner</option>
+                        </select>
+                       </div>
+                      <!-- End Select -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-auto">
+                  <small class="text-cap mb-2">Team members:</small>
+
+                  <div class="d-flex">
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-circle mr-3">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Linda Bates">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-info" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="#digitalmarketing">
+                        <span class="avatar-initials">
+                          <i class="tio-group-senior"></i>
+                        </span>
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="David Harrison">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-dark" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Antony Taylor">
+                        <span class="avatar-initials">A</span>
+                      </a>
+
+                      <a class="avatar avatar-light avatar-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
+                        <span class="avatar-initials">+2</span>
+                      </a>
+                    </div>
+                    <!-- End Avatar Group -->
+
+                    <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
+                      <i class="tio-share"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-sm-auto mb-2 mb-sm-0">
               <small class="text-cap mb-2">Team members:</small>
 
