@@ -192,7 +192,7 @@
                       alt="Image Description"
                     />
                   </a>
-                  
+
                   <a
                     class="avatar"
                     href="user-profile.html"
@@ -229,7 +229,7 @@
         <div class="card mb-3 mb-lg-5">
           <!-- Header -->
           <div class="card-header">
-            <h6 class="card-subtitle mb-0">Project budget: <span class="h3 ml-sm-2">$150,000.00 USD</span></h6>
+            <h4 class="mb-0">MRR<span class="h1 ml-sm-2">$287,000</span></h4>
 
             <!-- Unfold -->
             <div class="hs-unfold">
@@ -365,38 +365,50 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-receipt-outlined nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Spent</h4>
-                        <span class="d-block">-$71,431.00 USD</span>
+                        <h4 class="mb-1">MRR</h4>
+                        <span class="d-block">$248K</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 54,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [15,15,7,27,34,25,30],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#40C9A7",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -409,40 +421,105 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-chart-bar-1 nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Progress</h4>
-                        <span class="font-size-sm text-success">
-                          <i class="tio-trending-up"></i> 1.7%
-                        </span>
+                        <h4 class="mb-1">Net Revenue</h4>
+                        <span class="d-block">$248K</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 80,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [15,15,7,27,34,25,30],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#40C9A7",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
+                  </div>
+                </div>
+                <!-- End Row -->
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-3 mb-lg-6">
+            <!-- Card -->
+            <div class="card card-sm">
+              <div class="card-body">
+                <div class="row no-gutters">
+                  <div class="col-5">
+                    <!-- Media -->
+                    <div class="media">
+                      <div class="media-body">
+                        <h4 class="mb-1">Average Rev Per User</h4>
+                        <span class="d-block">$35.4K</span>
+                      </div>
+                    </div>
+                    <!-- End Media -->
+                  </div>
+
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [15,15,7,27,34,25,30],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#40C9A7",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -455,82 +532,50 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-checkmark-circle-outlined nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Tasks closed</h4>
-                        <span class="d-block">79 <span class="badge badge-soft-dark badge-pill ml-1">+4 today</span></span>
+                        <h4 class="mb-1">Revenue Churn</h4>
+                        <span class="d-block">-$7,431</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 67,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
-                  </div>
-                </div>
-                <!-- End Row -->
-              </div>
-            </div>
-            <!-- End Card -->
-          </div>
-
-          <div class="col-sm-6 col-lg-3 mb-3 mb-lg-6">
-            <!-- Card -->
-            <div class="card card-sm">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <!-- Media -->
-                    <div class="media">
-                      <i class="tio-award-outlined nav-icon"></i>
-
-                      <div class="media-body">
-                        <h4 class="mb-1">Goals</h4>
-                        <span class="d-block">41/100</span>
-                      </div>
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [34,25,20,27,34,25,7],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#f5ca99",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
                     </div>
-                    <!-- End Media -->
-                  </div>
-
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 41,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -545,38 +590,50 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-receipt-outlined nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Spent</h4>
-                        <span class="d-block">-$71,431.00 USD</span>
+                        <h4 class="mb-1">Other Revenue</h4>
+                        <span class="d-block">$0</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 54,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [0,0,0,0,0,0,0],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#f5ca99",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -589,40 +646,50 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-chart-bar-1 nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Progress</h4>
-                        <span class="font-size-sm text-success">
-                          <i class="tio-trending-up"></i> 1.7%
-                        </span>
+                        <h4 class="mb-1">Quick Ratio</h4>
+                        <span class="d-block">29%</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 80,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [15,15,7,27,34,25,30],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#40C9A7",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -635,38 +702,50 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-checkmark-circle-outlined nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Tasks closed</h4>
-                        <span class="d-block">79 <span class="badge badge-soft-dark badge-pill ml-1">+4 today</span></span>
+                        <h4 class="mb-1">Churned Subscriptions</h4>
+                        <span class="d-block">12</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 67,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [15,15,7,27,34,25,30],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#40C9A7",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -679,38 +758,50 @@
             <!-- Card -->
             <div class="card card-sm">
               <div class="card-body">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-5">
                     <!-- Media -->
                     <div class="media">
-                      <i class="tio-award-outlined nav-icon"></i>
-
                       <div class="media-body">
-                        <h4 class="mb-1">Goals</h4>
-                        <span class="d-block">41/100</span>
+                        <h4 class="mb-1">User Churn Rate</h4>
+                        <span class="d-block">5%</span>
                       </div>
                     </div>
                     <!-- End Media -->
                   </div>
 
-                  <div class="col-auto">
-                    <!-- Circle -->
-                    <div class="js-circle"
-                         data-hs-circles-options='{
-                           "value": 41,
-                           "maxValue": 100,
-                           "duration": 2000,
-                           "isViewportInit": true,
-                           "colors": ["#e7eaf3", "@@vars.style.color"],
-                           "radius": 25,
-                           "width": 3,
-                           "fgStrokeLinecap": "round",
-                           "textFontSize": 14,
-                           "additionalText": "%",
-                           "textClass": "circle-custom-text",
-                           "textColor": "@@vars.style.color"
-                         }'></div>
-                    <!-- End Circle -->
+                  <div class="col-7">
+                    <!-- Line Chart -->
+                    <div class="chartjs-custom" style="height: 2rem;">
+                      <canvas class="js-chart"
+                              data-hs-chartjs-options='{
+                                "type": "line",
+                                "data": {
+                                    "labels": ["value","value","value","value","value","value","value"],
+                                    "datasets": [{
+                                    "data": [15,15,7,27,34,25,30],
+                                    "backgroundColor": "transparent",
+                                    "borderColor": "#40C9A7",
+                                    "borderWidth": 2,
+                                    "pointRadius": 0,
+                                    "pointHoverRadius": 0
+                                  }]
+                                },
+                                "options": {
+                                    "scales": {
+                                      "yAxes": [{
+                                        "display": false
+                                      }],
+                                      "xAxes": [{
+                                        "display": false
+                                      }]
+                                    },
+                                    "tooltips": false
+                                }
+                              }'>
+                      </canvas>
+                    </div>
+                    <!-- End Line Chart -->
                   </div>
                 </div>
                 <!-- End Row -->
@@ -1028,18 +1119,22 @@
           }
         });
 
-
         // INITIALIZATION OF CLIPBOARD
         // =======================================================
         $('.js-clipboard').each(function() {
           var clipboard = $.HSCore.components.HSClipboard.init(this);
         });
 
-
         // INITIALIZATION OF CIRCLES
         // =======================================================
         $('.js-circle').each(function () {
           var circle = $.HSCore.components.HSCircles.init($(this));
+        });
+
+        // INITIALIZATION OF LINE CHARTIST
+        // =======================================================
+        $('.js-chart').each(function () {
+          $.HSCore.components.HSChartJS.init($(this));
         });
       });
     </script>
