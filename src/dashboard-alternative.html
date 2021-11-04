@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Pre-Funding | Front - Admin &amp; Dashboard Template</title>
+    <title>Pre-Fundings | Front - Admin &amp; Dashboard Template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -79,7 +79,7 @@
       @@include("@@autopath/partials/sidebar/compact.html", {
         "category": "dashboards",
         "subcategory": "",
-        "link": "dashboard-alternative.html"
+        "link": "index.html"
       })
     }
     <!-- End Navbar Vertical -->
@@ -120,18 +120,18 @@
               <!-- Nav -->
               <ul class="nav nav-tabs nav-tabs-light page-header-tabs" id="pageHeaderTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" href="javascript:;">Risk<span class="badge badge-warning badge-pill ml-1">
+                  <a class="nav-link active" href="javascript:;">Risk<span class="badge badge-danger badge-pill ml-1">
                     <i class="warning mr-1"></i> Pre-Funding
                   </span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="funding.html">MarketPlace<span class="badge badge-success badge-pill ml-1">
+                  <a class="nav-link" href="funding.html">MarketPlace<span class="badge badge-warning badge-pill ml-1">
                     <i class="warning mr-1"></i> Funding
                   </span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="post-funding.html">Balance
-                    <span class="badge badge-danger  badge-pill ml-1">
+                    <span class="badge badge-success  badge-pill ml-1">
                     <i class="warning mr-2"></i>Post-Funding
                     </span>
                   </a>
@@ -342,7 +342,7 @@
               <div class="col-sm mb-3 mb-sm-0">
                 
                 <div class="d-flex align-items-center">
-                  <span class="h1 mb-0">56</span>
+                  <span class="mb-0 fundingScore">56</span>
 
                   <span class="text-success ml-2">
                     <i class="tio-trending-up"></i> 25.3%
@@ -409,7 +409,7 @@
                                   "fontColor": "#97a4af",
                                   "fontFamily": "Open Sans, sans-serif",
                                   "padding": 10,
-                                  "postfix": ""
+                                  "postfix": "k"
                                 }
                               }],
                               "xAxes": [{
@@ -527,7 +527,7 @@
 
                   <div class="chartjs-doughnut-custom-stat">
                     <small class="text-cap">funding score</small>
-                    <span class="h1">56</span>
+                    <span class="fundingScore">56</span>
                   </div>
                 </div>
                 <!-- End Chart Half -->
@@ -559,7 +559,7 @@
             <div class="card h-100">
               <!-- Header -->
               <div class="card-header">
-                <h4 class="card-header-title">Saved Partners</h4>
+                <h4 class="card-header-title">Latest transactions</h4>
 
                 <!-- Unfold -->
                 <div class="hs-unfold">
@@ -605,7 +605,7 @@
                    <li class="list-group-item">
                     <div class="media">
                       <!-- Avatar -->
-                      <img class="avatar avatar-lg avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Image Description">
+                      <img class="avatar avatar-sm avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Image Description">
                       <!-- End Avatar -->
 
                       <div class="media-body">
@@ -617,18 +617,12 @@
                           </div>
 
                           <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
-                             <!-- Progress -->
-                <div class="progress rounded-pill mb-2 mt-3">
-                  <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-                
-                </div>
-
-               
-                <!-- End Progress -->
+                            <h5 class="mb-0">-$11.00 USD</h5>
+                            <span class="font-size-sm">12 May, 2020</span>
                           </div>
 
-                          <div class="col-auto col-md-3 order-md-2 mt-2">
-                            <span class="badge badge-soft-success badge-pill">65%</span>
+                          <div class="col-auto col-md-3 order-md-2">
+                            <span class="badge badge-soft-success badge-pill">12%</span>
                           </div>
                         </div>
                         <!-- End Row -->
@@ -640,30 +634,24 @@
                   <li class="list-group-item">
                     <div class="media">
                       <!-- Avatar -->
-                      <img class="avatar avatar-lg avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Image Description">
+                      <img class="avatar avatar-sm avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Image Description">
                       <!-- End Avatar -->
 
                       <div class="media-body">
                         <div class="row">
                           <div class="col-7 col-md-5 order-md-1">
-                            <h5 class="mb-0 mt-2">kickpay</h5>
+                            <h5 class="mb-0">kickpay</h5>
                             <span class="font-size-sm"><div class="mr-1 undefined badge-soft-info badge badge-secondary">Rev Share</div>
                               <div class="mr-1 undefined badge-soft-warning badge badge-secondary">Term Note</div></span>
                           </div>
 
                           <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
-                           <!-- Progress -->
-                <div class="progress rounded-pill mb-2 mt-3">
-                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-                </div>
-
-                
-                
-                <!-- End Progress -->
+                            <h5 class="mb-0">-$11.00 USD</h5>
+                            <span class="font-size-sm">12 May, 2020</span>
                           </div>
 
-                          <div class="col-auto col-md-3 order-md-2 mt-2">
-                            <span class="badge badge-soft-success badge-pill">50%</span>
+                          <div class="col-auto col-md-3 order-md-2">
+                            <span class="badge badge-soft-success badge-pill">14%</span>
                           </div>
                         </div>
                         <!-- End Row -->
@@ -676,7 +664,7 @@
                   <li class="list-group-item">
                     <div class="media">
                       <!-- Avatar -->
-                      <img class="avatar avatar-lg avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Image Description">
+                      <img class="avatar avatar-sm avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Image Description">
                       <!-- End Avatar -->
 
                       <div class="media-body">
@@ -688,18 +676,12 @@
                           </div>
 
                           <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
-                             <!-- Progress -->
-                <div class="progress rounded-pill mt-3">
-                  <div class="progress-bar" role="progressbar" style="width: 37%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-                  
-                </div>
-
-               
-                <!-- End Progress -->
+                            <h5 class="text-success mb-0">$3500.00 USD</h5>
+                            <span class="font-size-sm">10 May, 2020</span>
                           </div>
 
-                          <div class="col-auto col-md-3 order-md-2 mt-2">
-                            <span class="badge badge-soft-success badge-pill">37%</span>
+                          <div class="col-auto col-md-3 order-md-2">
+                            <span class="badge badge-soft-success badge-pill">6%</span>
                           </div>
                         </div>
                         <!-- End Row -->
@@ -712,7 +694,7 @@
                   <li class="list-group-item">
                     <div class="media">
                       <!-- Avatar -->
-                      <img class="avatar avatar-lg avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Image Description">
+                      <img class="avatar avatar-sm avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Image Description">
                       <!-- End Avatar -->
 
                       <div class="media-body">
@@ -723,19 +705,13 @@
                               <div class="mr-1 undefined badge-soft-warning badge badge-secondary">Term Note</div></span>
                           </div>
 
-                          <div class="col-5 col-md-4 order-md-3 text-right mt-5 mt-md-0 ">
-                            <!-- Progress -->
-                <div class="progress rounded-pill mt-3">
-                  <div class="progress-bar" role="progressbar" style="width: 18%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-                 
-                </div>
-
-             
-                <!-- End Progress -->
+                          <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
+                            <h5 class="mb-0">-$10.00 USD</h5>
+                            <span class="font-size-sm">12 May, 2020</span>
                           </div>
 
-                          <div class="col-auto col-md-3 order-md-2 mt-2">
-                            <span class="badge badge-soft-danger badge-pill">18%</span>
+                          <div class="col-auto col-md-3 order-md-2">
+                            <span class="badge badge-soft-danger badge-pill">-12%</span>
                           </div>
                         </div>
                         <!-- End Row -->
@@ -909,12 +885,12 @@
         // =======================================================
         var updatingChartDatasets = [
           [
-            [12,19,25,29,32,37,40,43,43,43,56,56],
-            [80,80,80,80,80,80,80,80,80,80,80,80]
+            [18,51,60,38,88,50,40,52,88,80,60,70],
+            [27,38,60,77,40,50,49,29,42,27,42,50]
           ],
           [
             [77,40,50,49,27,38,60,42,50,29,42,27],
-            [80,80,80,80,80,80,80,80,80,80,88,80]
+            [60,38,18,51,88,50,40,52,60,70,88,80]
           ]
         ]
 
