@@ -34,7 +34,7 @@ module.exports = {
   //
 
   layoutBuilder: {
-    skin: "light", // default, dark, light
+    skin: "default", // default, dark, light
     header: {
       layoutMode: "default", // default, single, double
       containerMode: "container", // container, container-fluid
