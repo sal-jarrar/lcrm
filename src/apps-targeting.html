@@ -67,13 +67,13 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <!-- Navbar Vertical -->
-    <!-- @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
+    @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "dashboards",
+        "category": "apps",
         "subcategory": "",
-        "link": "index.html"
+        "link": "apps-targeting.html"
       })
-    } -->
+    }
 
     @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/compact.html", {

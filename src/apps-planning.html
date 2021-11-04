@@ -66,13 +66,13 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <!-- Navbar Vertical -->
-    <!-- @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
+    @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "dashboards",
+        "category": "apps",
         "subcategory": "",
-        "link": "index.html"
+        "link": "apps-planning.html"
       })
-    } -->
+    }
 
     @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/compact.html", {
@@ -145,7 +145,7 @@
                       alt="Image Description"
                     />
                   </a>
-                  
+
                   <a
                     class="avatar"
                     href="user-profile.html"
@@ -275,8 +275,8 @@
                                   alt="Image Description"
                                 />
                               </span>
-                              
-                              
+
+
                             </div>
                             <!-- End Avatar Group -->
                           </div>
