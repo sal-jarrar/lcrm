@@ -37,7 +37,7 @@ module.exports = {
     skin: "light", // default, dark, light
     header: {
       layoutMode: "default", // default, single, double
-      containerMode: "container-fluid", // container, container-fluid
+      containerMode: "container", // container, container-fluid
     },
     sidebarLayout: "default", // default, compact, mini
   },
