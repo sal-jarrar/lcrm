@@ -88,94 +88,180 @@
       <div class="content @@layoutBuilder.header.containerMode">
         <!-- Page Header -->
         <div class="page-header">
-          <div class="row align-items-end">
-            <div class="col-sm mb-2 mb-sm-0">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-no-gutter">
-                  <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Apps</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Planning</li>
-                </ol>
-              </nav>
-
-              <h1 class="page-header-title">Planning</h1>
+          <div class="media mb-3">
+            <!-- Avatar -->
+            <div class="avatar avatar-xl avatar-4by3 mr-2">
+              <img class="avatar avatar-xl avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Image Description">
             </div>
+            <!-- End Avatar -->
 
-            <div class="col-sm-auto">
-              <small class="text-cap mb-2">Lenders:</small>
+            <div class="media-body">
+              <div class="row">
+                <div class="col-lg mb-3 mb-lg-0">
+                  <h1 class="page-header-title">Planning</h1>
 
-              <div class="d-flex">
-                <!-- Avatar Group -->
-                <div class="avatar-group avatar-circle mr-3">
-                  <a
-                    class="avatar"
-                    href="user-profile.html"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Capchase"
-                  >
-                    <img
-                      class="avatar-img"
-                      src="@@autopath/assets/img/offer-partners/capChase2.png"
-                      alt="Image Description"
-                    />
-                  </a>
-                  <a
-                  class="avatar"
-                  href="user-profile.html"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="YardLine"
-                >
-                  <img
-                    class="avatar-img"
-                    src="@@autopath/assets/img/offer-partners/yardlineDetail.png"
-                    alt="Image Description"
-                  />
-                </a>
-                  <a
-                    class="avatar"
-                    href="user-profile.html"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="clearco"
-                  >
-                    <img
-                      class="avatar-img"
-                      src="@@autopath/assets/img/offer-partners/clearcoDetail.png"
-                      alt="Image Description"
-                    />
-                  </a>
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <!-- Select -->
+                      <div class="select2-custom">
+                        <select class="js-select2-custom custom-select-sm" size="1" style="opacity: 0;" id="ownerLabel"
+                        data-hs-select2-options='{
+                          "minimumResultsForSearch": "Infinity",
+                          "customClass": "custom-select custom-select-sm custom-select-borderless pl-0",
+                          "dropdownAutoWidth": true,
+                          "width": true
+                        }'>
+                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Avatar" /><span class="media-body">Clearco</span></span>'>Clearco</option>
+                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Avatar" /><span class="media-body">Yardline</span></span>'>Yardline</option>
+                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">KickPay</span></span>'>KickPay</option>
+                        </select>
+                       </div>
+                      <!-- End Select -->
+                    </div>
+                    
+                    <div class="col-auto mr-4">
+                      <span>Funding Target:</span>
+                      <a href="#">$500,000</a>
+                    </div>
 
-                  <a
-                    class="avatar"
-                    href="user-profile.html"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="kickpay"
-                  >
-                    <img
-                      class="avatar-img"
-                      src="@@autopath/assets/img/offer-partners/kickpay.png"
-                      alt="Image Description"
-                    />
-                  </a>
+                    <div class="col-auto">
+                      <div class="row align-items-center g-0">
+                        <div class="col-auto">Deadline:</div>
 
-                  <a
-                    class="avatar avatar-light avatar-circle"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target="#shareWithPeopleModal"
-                  >
-                    <span class="avatar-initials">+2</span>
-                  </a>
+                        <!-- Flatpickr -->
+                        <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless col input-group input-group-sm"
+                              data-hs-flatpickr-options='{
+                                "appendTo": "#projectDeadlineFlatpickr",
+                                "dateFormat": "d/m/Y",
+                                "wrap": true
+                              }'>
+                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2020">
+                          <div class="input-group-append" data-toggle>
+                            <div class="input-group-text">
+                              <i class="tio-chevron-down"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Flatpickr -->
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-sm-auto">
+                  <small class="text-cap mb-2">Capital Partners:</small>
+    
+                  <div class="d-flex">
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-circle mr-3">
+                      <a
+                        class="avatar"
+                        href="user-profile.html"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Capchase"
+                      >
+                        <img
+                          class="avatar-img"
+                          src="@@autopath/assets/img/offer-partners/capChase2.png"
+                          alt="Image Description"
+                        />
+                      </a>
+                      <a
+                      class="avatar"
+                      href="user-profile.html"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="YardLine"
+                    >
+                      <img
+                        class="avatar-img"
+                        src="@@autopath/assets/img/offer-partners/yardlineDetail.png"
+                        alt="Image Description"
+                      />
+                    </a>
+                      <a
+                        class="avatar"
+                        href="user-profile.html"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="clearco"
+                      >
+                        <img
+                          class="avatar-img"
+                          src="@@autopath/assets/img/offer-partners/clearcoDetail.png"
+                          alt="Image Description"
+                        />
+                      </a>
+                      
+                      <a
+                        class="avatar"
+                        href="user-profile.html"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="kickpay"
+                      >
+                        <img
+                          class="avatar-img"
+                          src="@@autopath/assets/img/offer-partners/kickpay.png"
+                          alt="Image Description"
+                        />
+                      </a>
+    
+                      <a
+                        class="avatar avatar-light avatar-circle"
+                        href="javascript:;"
+                        data-toggle="modal"
+                        data-target="#shareWithPeopleModal"
+                      >
+                        <span class="avatar-initials">+2</span>
+                      </a>
+    
+                    <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
+                      <i class="tio-share"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+                <!-- <div class="col-lg-auto">
+                  <small class="text-cap mb-2">Team members:</small>
 
-                <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
-                  <i class="tio-share"></i>
-                </a>
+                  <div class="d-flex">
+                   
+                    
+                    <div class="avatar-group avatar-circle mr-3">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Linda Bates">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-info" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="#digitalmarketing">
+                        <span class="avatar-initials">
+                          <i class="tio-group-senior"></i>
+                        </span>
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="David Harrison">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-dark" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Antony Taylor">
+                        <span class="avatar-initials">A</span>
+                      </a>
+
+                      <a class="avatar avatar-light avatar-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
+                        <span class="avatar-initials">+2</span>
+                      </a>
+                    </div>
+                   
+
+                    <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
+                      <i class="tio-share"></i>
+                    </a>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
-        </div>
         <!-- End Page Header -->
       </div>
       <!-- End Content -->
