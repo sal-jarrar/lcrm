@@ -34,12 +34,12 @@ module.exports = {
   //
 
   layoutBuilder: {
-    skin: "dark", // default, dark, light
+    skin: "light", // default, dark, light
     header: {
       layoutMode: "default", // default, single, double
-      containerMode: "container", // container, container-fluid
+      containerMode: "container-fluid", // container, container-fluid
     },
-    sidebarLayout: "compact", // default, compact, mini
+    sidebarLayout: "default", // default, compact, mini
   },
 
   //
