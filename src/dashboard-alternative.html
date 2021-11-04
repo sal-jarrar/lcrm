@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Dashboard | Front - Admin &amp; Dashboard Template</title>
+    <title>Targeting | Front - Admin &amp; Dashboard Template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -18,6 +18,7 @@
     <!-- bundlecss:vendor [@@autopath] -->
     <link rel="stylesheet" href="@@autopath/assets/vendor/icon-set/style.css">
     <link rel="stylesheet" href="@@autopath/node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="@@autopath/node_modules/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="@@autopath/node_modules/chart.js/dist/Chart.min.css">
     <link rel="stylesheet" href="@@autopath/node_modules/daterangepicker/daterangepicker.css">
     @@if (layoutBuilder.header.layoutMode !== 'default') {
@@ -70,7 +71,7 @@
       @@include("@@autopath/partials/sidebar/main.html", {
         "category": "dashboards",
         "subcategory": "",
-        "link": "index.html"
+        "link": "dashboard-alternative.html"
       })
     }
 
@@ -78,7 +79,7 @@
       @@include("@@autopath/partials/sidebar/compact.html", {
         "category": "dashboards",
         "subcategory": "",
-        "link": "dashboard-alternative.html"
+        "link": "dashboard.alternative.html"
       })
     }
     <!-- End Navbar Vertical -->
@@ -155,9 +156,9 @@
         <div class="page-header">
           <div class="media mb-3">
             <!-- Avatar -->
-            <!-- <div class="avatar avatar-xl avatar-4by3 mr-2">
-              <img class="avatar-img" src="@@autopath/assets/svg/brands/guideline.svg" alt="Image Description">
-            </div> -->
+            <div class="avatar avatar-xl avatar-4by3 mr-2">
+              <img class="avatar avatar-xl avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Image Description">
+            </div>
             <!-- End Avatar -->
 
             <div class="media-body">
@@ -167,7 +168,25 @@
 
                   <div class="row align-items-center">
                     <div class="col-auto">
-                      <span>Target:</span>
+                      <!-- Select -->
+                      <div class="select2-custom">
+                        <select class="js-select2-custom custom-select-sm" size="1" style="opacity: 0;" id="ownerLabel"
+                        data-hs-select2-options='{
+                          "minimumResultsForSearch": "Infinity",
+                          "customClass": "custom-select custom-select-sm custom-select-borderless pl-0",
+                          "dropdownAutoWidth": true,
+                          "width": true
+                        }'>
+                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Avatar" /><span class="media-body">Clearco</span></span>'>Clearco</option>
+                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Avatar" /><span class="media-body">Yardline</span></span>'>Yardline</option>
+                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">KickPay</span></span>'>KickPay</option>
+                        </select>
+                       </div>
+                      <!-- End Select -->
+                    </div>
+                    
+                    <div class="col-auto mr-4">
+                      <span>Funding Target:</span>
                       <a href="#">$500,000</a>
                     </div>
 
@@ -192,24 +211,7 @@
                         <!-- End Flatpickr -->
                       </div>
                     </div>
-
-                    <div class="col-auto">
-                      <!-- Select -->
-                      <div class="select2-custom">
-                        <select class="js-select2-custom custom-select-sm" size="1" style="opacity: 0;" id="ownerLabel"
-                                data-hs-select2-options='{
-                                  "minimumResultsForSearch": "Infinity",
-                                  "customClass": "custom-select custom-select-sm custom-select-borderless pl-0",
-                                  "dropdownAutoWidth": true,
-                                  "width": true
-                                }'>
-                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/160x160/img6.jpg" alt="Avatar" /><span class="media-body">Mark Williams</span></span>'>Mark Williams</option>
-                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/160x160/img10.jpg" alt="Avatar" /><span class="media-body">Amanda Harvey</span></span>'>Amanda Harvey</option>
-                          <option value="owner3" data-option-template='<span class="media align-items-center"><i class="tio-user-outlined text-body mr-2"></i><span class="media-body">Assign to owner</span></span>'>Assign to owner</option>
-                        </select>
-                       </div>
-                      <!-- End Select -->
-                    </div>
+                    
                   </div>
                 </div>
                 <div class="col-sm-auto">
@@ -609,7 +611,7 @@
                       <div class="media-body">
                         <div class="row">
                           <div class="col-7 col-md-5 order-md-1">
-                            <h5 class="mb-0 mt-2">clearco</h5>
+                            <h5 class="mb-0 mt-2">Clearco</h5>
                             <span class="font-size-sm"><div class="mr-1 undefined badge-soft-info badge badge-secondary">Rev Share</div>
                               <div class="mr-1 undefined badge-soft-warning badge badge-secondary">Term Note</div></span>
                           </div>
@@ -680,7 +682,7 @@
                       <div class="media-body">
                         <div class="row">
                           <div class="col-7 col-md-5 order-md-1">
-                            <h5 class="mb-0 mt-2">CapChase</h5>
+                            <h5 class="mb-0 mt-2">Capchase</h5>
                             <span class="font-size-sm"><div class="mr-1 undefined badge-soft-info badge badge-secondary">Rev Share</div>
                               <div class="mr-1 undefined badge-soft-warning badge badge-secondary">Term Note</div></span>
                           </div>
@@ -716,7 +718,7 @@
                       <div class="media-body">
                         <div class="row">
                           <div class="col-7 col-md-5 order-md-1">
-                            <h5 class="mb-0 mt-2">YardLine</h5>
+                            <h5 class="mb-0 mt-2">Yardline</h5>
                             <span class="font-size-sm"><div class="mr-1 undefined badge-soft-info badge badge-secondary">Rev Share</div>
                               <div class="mr-1 undefined badge-soft-warning badge badge-secondary">Term Note</div></span>
                           </div>
@@ -799,12 +801,17 @@
     <script src="@@autopath/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside.min.js"></script>
     <script src="@@autopath/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
     <script src="@@autopath/assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+    <script src="@@autopath/node_modules/select2/dist/js/select2.full.min.js"></script>
     <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
     <script src="@@autopath/node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="@@autopath/node_modules/flatpickr/dist/flatpickr.min.js"></script>
     <script src="@@autopath/node_modules/daterangepicker/moment.min.js"></script>
     <script src="@@autopath/node_modules/daterangepicker/daterangepicker.js"></script>
     <script src="@@autopath/assets/vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
     <script src="@@autopath/assets/vendor/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="@@autopath/node_modules/clipboard/dist/clipboard.min.js"></script>
+    <script src="@@autopath/node_modules/appear/dist/appear.min.js"></script>
+    <script src="@@autopath/node_modules/circles.js/circles.min.js"></script>
     @@if (layoutBuilder.header.layoutMode !== 'default') {
       <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
     }
@@ -812,8 +819,12 @@
     <!-- JS Front -->
     <!-- bundlejs:theme [@@autopath] -->
     <script src="@@autopath/assets/js/hs.core.js"></script>
+    <script src="@@autopath/assets/js/hs.select2.js"></script>
     <script src="@@autopath/assets/js/hs.chartjs.js"></script>
     <script src="@@autopath/assets/js/hs.jvector-map.js"></script>
+    <script src="@@autopath/assets/js/hs.flatpickr.js"></script>
+    <script src="@@autopath/assets/js/hs.clipboard.js"></script>
+    <script src="@@autopath/assets/js/hs.circles.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
@@ -867,13 +878,25 @@
           new HSFormSearch($(this)).init()
         });
 
-        
+         // INITIALIZATION OF SELECT2
+        // =======================================================
+        $('.js-select2-custom').each(function () {
+          var select2 = $.HSCore.components.HSSelect2.init($(this));
+        });
+
+
+        // INITIALIZATION OF FLATPICKR
+        // =======================================================
+        $('.js-flatpickr').each(function () {
+          $.HSCore.components.HSFlatpickr.init($(this));
+        });
+
+
         // INITIALIZATION OF NAV SCROLLER
         // =======================================================
         $('.js-nav-scroller').each(function () {
           new HsNavScroller($(this)).init()
         });
-
         
         // INITIALIZATION OF CHARTJS
         // =======================================================
