@@ -1,5 +1,5 @@
 <!-- Dashboards -->
-<li class="navbar-vertical-aside-has-menu @@if(category=='dashboards'){show}">
+<li class="navbar-vertical-aside-has-menu">
   <a
     class="
       js-navbar-vertical-aside-menu-link
@@ -18,9 +18,9 @@
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
       <a
-        class="nav-link @@if(link=='index.html'){active}"
-        href="@@autopath/index.html"
-        title="Default"
+        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
+        href="@@autopath/dashboard-alternative.html"
+        title=""
       >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Pre-funding</span>
@@ -29,18 +29,18 @@
     <li class="nav-item">
       <a
         class="nav-link @@if(link=='dashboard-alternative.html'){active}"
-        href="@@autopath/dashboard-alternative.html"
+        href="@@autopath/funding.html"
         title="Alternative"
       >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">During </span>
+        <span class="text-truncate">Funding</span>
       </a>
     </li>
     <li class="nav-item">
       <a
-        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
-        href="@@autopath/dashboard-alternative.html"
-        title="Alternative"
+       class="nav-link @@if(link=='post-funding.html'){active}"
+        href="@@autopath/post-funding.html"
+        title="Default"
       >
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Post funding</span>
@@ -570,7 +570,7 @@
 <!-- End Pages -->
 
 <!-- Apps -->
-<li class="navbar-vertical-aside-has-menu @@if(category=='apps'){show}">
+<li class="navbar-vertical-aside-has-menu">
   <a
     class="
       js-navbar-vertical-aside-menu-link
@@ -582,7 +582,8 @@
   >
     <i class="tio-apps nav-icon"></i>
     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Apps <span class="badge badge-info badge-pill ml-1">Hot</span></span
+      >Apps
+      </span
     >
   </a>
 
@@ -612,64 +613,44 @@
 <!-- End Apps -->
 
 <!-- User Profile -->
-<li class="nav-item @@if(category=='components'){active}">
+<li class="nav-item">
   <a
     class="nav-link @@if(link=='user-profile-my-profile.html'){active}"
     href="@@autopath/user-profile-my-profile.html"
     title="My Profile"
   >
-    <i class="tio-layers-outlined nav-icon"></i>
+    <i class="tio-visible-outlined nav-icon"></i>
     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
       >User Profile</span
     >
   </a>
 </li>
-<!--Account-->
-<li class="navbar-vertical-aside-has-menu @@if(category=='dashboards'){show}">
-  <a
-    class="
-      js-navbar-vertical-aside-menu-link
-      nav-link nav-link-toggle
-      @@if(category=='dashboards'){active}
-    "
-    href="javascript:;"
-    title="Dashboards"
-  >
+<!--beginning of account-->
+<li class="navbar-vertical-aside-has-menu">
+  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='account'){active}"
+    href="javascript:;" title="Account">
     <i class="tio-home-vs-1-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Account</span
-    >
+    <span class="nav-compact-title text-truncate">Account</span>
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
-      <a
-        class="nav-link @@if(link=='index.html'){active}"
-        href="@@autopath/index.html"
-        title="Default"
-      >
+      <a class="nav-link @@if(link=='account-settings.html'){active}" href="@@autopath/account-settings.html"
+        title="Settings">
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Settings</span>
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
-        href="@@autopath/dashboard-alternative.html"
-        title="Alternative"
-      >
+      <a class="nav-link @@if(link=='account-billing.html'){active}" href="@@autopath/account-billing.html" title="Billing">
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Billing</span>
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link @@if(link=='dashboard-alternative.html'){active}"
-        href="@@autopath/dashboard-alternative.html"
-        title="Alternative"
-      >
+      <a class="nav-link @@if(link=='account-invoice.html'){active}" href="@@autopath/account-invoice.html" title="Invoice">
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate">invoice</span>
+        <span class="text-truncate">Invoice</span>
       </a>
     </li>
   </ul>
@@ -978,199 +959,17 @@
     >
   </a>
 </li> -->
-
-<li class="nav-item">
-  <div class="nav-divider"></div>
-</li>
-
-<li class="nav-item">
-  <small class="nav-subtitle" title="Documentation">Documentation</small>
-  <small class="tio-more-horizontal nav-subtitle-replacer"></small>
-</li>
-
+<!--documentation-->
 <li class="nav-item @@if(category=='documentation'){active}">
-  <a
-    class="js-nav-tooltip-link nav-link"
-    href="@@autopath/documentation/index.html"
-    title="Documentation"
-    data-placement="left"
-  >
+  <a class="nav-link" href="@@autopath/documentation/index.html" title="Documentation">
     <i class="tio-book-opened nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Documentation
-      <span class="badge badge-primary badge-pill ml-1">v1.1</span></span
-    >
+    <span class="nav-compact-title text-truncate">Documentation</span>
+    <span class="badge badge-primary badge-pill">v1.1</span>
   </a>
 </li>
 
 <li class="nav-item">
   <small class="tio-more-horizontal nav-subtitle-replacer"></small>
 </li>
+<!--end of documentation-->
 
-<!-- Front Builder -->
-<li class="nav-item nav-footer-item @@if(category=='components'){active}">
-  <a
-    class="d-none d-md-flex js-hs-unfold-invoker nav-link nav-link-toggle"
-    href="javascript:;"
-    data-hs-unfold-options='{
-       "target": "#styleSwitcherDropdown",
-       "type": "css-animation",
-       "animationIn": "fadeInRight",
-       "animationOut": "fadeOutRight",
-       "hasOverlay": true,
-       "smartPositionOff": true
-     }'
-  >
-    <i class="tio-tune nav-icon"></i>
-  </a>
-  <a class="d-flex d-md-none nav-link nav-link-toggle" href="javascript:;">
-    <i class="tio-tune nav-icon"></i>
-  </a>
-</li>
-<!-- End Front Builder -->
-
-<!-- Help -->
-<li
-  class="
-    navbar-vertical-aside-has-menu
-    nav-footer-item
-    @@if(category=='help'){show}
-  "
->
-  <a
-    class="
-      js-navbar-vertical-aside-menu-link
-      nav-link nav-link-toggle
-      @@if(category=='Help'){active}
-    "
-    href="javascript:;"
-    title="Help"
-  >
-    <i class="tio-home-vs-1-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Help</span
-    >
-  </a>
-
-  <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Resources &amp; tutorials">
-        <i class="tio-book-outlined dropdown-item-icon"></i> Resources &amp;
-        tutorials
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Keyboard shortcuts">
-        <i class="tio-command-key dropdown-item-icon"></i> Keyboard shortcuts
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Connect other apps">
-        <i class="tio-alt dropdown-item-icon"></i> Connect other apps
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="What's new?">
-        <i class="tio-gift dropdown-item-icon"></i> What's new?
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Contact support">
-        <i class="tio-chat-outlined dropdown-item-icon"></i> Contact support
-      </a>
-    </li>
-  </ul>
-</li>
-<!-- End Help -->
-
-<!-- Language -->
-<li
-  class="
-    navbar-vertical-aside-has-menu
-    nav-footer-item
-    @@if(category=='language'){show}
-  "
->
-  <a
-    class="
-      js-navbar-vertical-aside-menu-link
-      nav-link nav-link-toggle
-      @@if(category=='Language'){active}
-    "
-    href="javascript:;"
-    title="Language"
-  >
-    <img
-      class="avatar avatar-xss avatar-circle"
-      src="@@autopath/node_modules/flag-icon-css/flags/1x1/us.svg"
-      alt="United States Flag"
-    />
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Language</span
-    >
-  </a>
-
-  <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="English (US)">
-        <img
-          class="avatar avatar-xss avatar-circle mr-2"
-          src="@@autopath/node_modules/flag-icon-css/flags/1x1/us.svg"
-          alt="Flag"
-        />
-        English (US)
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="English (UK)">
-        <img
-          class="avatar avatar-xss avatar-circle mr-2"
-          src="@@autopath/node_modules/flag-icon-css/flags/1x1/gb.svg"
-          alt="Flag"
-        />
-        English (UK)
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Deutsch">
-        <img
-          class="avatar avatar-xss avatar-circle mr-2"
-          src="@@autopath/node_modules/flag-icon-css/flags/1x1/de.svg"
-          alt="Flag"
-        />
-        Deutsch
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Dansk">
-        <img
-          class="avatar avatar-xss avatar-circle mr-2"
-          src="@@autopath/node_modules/flag-icon-css/flags/1x1/dk.svg"
-          alt="Flag"
-        />
-        Dansk
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="Italiano">
-        <img
-          class="avatar avatar-xss avatar-circle mr-2"
-          src="@@autopath/node_modules/flag-icon-css/flags/1x1/it.svg"
-          alt="Flag"
-        />
-        Italiano
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" title="中文 (繁體)">
-        <img
-          class="avatar avatar-xss avatar-circle mr-2"
-          src="@@autopath/node_modules/flag-icon-css/flags/1x1/cn.svg"
-          alt="Flag"
-        />
-        中文 (繁體)
-      </a>
-    </li>
-  </ul>
-</li>
-<!-- End Language -->
