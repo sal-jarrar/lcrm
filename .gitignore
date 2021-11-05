@@ -4,7 +4,7 @@ __MACOSX/
 .idea/*
 /node_modules/*
 /dist/*
-/build/*
+
 /preview/*
 /src/.tmp/*
 .vscode
