@@ -97,7 +97,7 @@
 
               <div class="col-auto">
                 <!-- Daterangepicker -->
-                
+
                 <!-- End Daterangepicker -->
               </div>
             </div>
@@ -214,7 +214,7 @@
                       </div>
                     </div>
 
-                    
+
                   </div>
                 </div>
 
@@ -263,7 +263,7 @@
                         alt="Image Description"
                       />
                     </a>
-                    
+
                     <a
                       class="avatar"
                       href="user-profile.html"
@@ -277,7 +277,7 @@
                         alt="Image Description"
                       />
                     </a>
-  
+
                     <a
                       class="avatar avatar-light avatar-circle"
                       href="javascript:;"
@@ -301,7 +301,7 @@
 
           <!-- Nav -->
           <!-- Header -->
-          
+
           <!-- End Header -->
 
           <!-- Body -->
@@ -414,10 +414,10 @@
           <!-- End Body -->
 
           <!-- Table -->
-         
+
 
           <!-- Card Footer -->
-          
+
           <!-- End Card Footer -->
         </div>
         <!-- End Card -->
@@ -492,9 +492,9 @@
                           }
                         }'></canvas>
 
-                  <div class="chartjs-doughnut-custom-stat">
-                    <small class="text-cap">Project balance</small>
-                    <span class="h1">$150,238.00</span>
+                  <div class="chartjs-doughnut-custom-stat mt-n4">
+                    <small class="text-nowrap text-cap">Project balance</small>
+                    <h1>$150,238</h1>
                   </div>
                 </div>
                 <!-- End Chart Half -->
@@ -754,7 +754,7 @@
         <!-- End Row -->
       </div>
 
-       
+
       </div>
       <!-- End Content -->
 
@@ -841,12 +841,12 @@
           }).init();
         }
 
-        
+
         // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
         // =======================================================
         var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
 
-        
+
         // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
         // =======================================================
         $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
@@ -857,14 +857,14 @@
           }
         });
 
-        
+
         // INITIALIZATION OF UNFOLD
         // =======================================================
         $('.js-hs-unfold-invoker').each(function () {
           var unfold = new HSUnfold($(this)).init();
         });
 
-        
+
         // INITIALIZATION OF FORM SEARCH
         // =======================================================
         $('.js-form-search').each(function () {
@@ -890,14 +890,14 @@
         $('.js-nav-scroller').each(function () {
           new HsNavScroller($(this)).init()
         });
-        
+
         // INITIALIZATION OF CHARTJS
         // =======================================================
         $('.js-chart').each(function () {
           $.HSCore.components.HSChartJS.init($(this));
         });
 
-        
+
         // INITIALIZATION OF CHARTJS
         // =======================================================
         var updatingChartDatasets = [
@@ -911,7 +911,7 @@
           ]
         ]
 
-        
+
         // INITIALIZATION OF CHARTJS
         // =======================================================
         var updatingChart = $.HSCore.components.HSChartJS.init($('#updatingData'), {
@@ -938,7 +938,7 @@
           updatingChart.update();
         })
 
-        
+
         // INITIALIZATION OF CHARTJS
         // =======================================================
         $.HSCore.components.HSChartJS.init($('.js-chartjs-doughnut-half'), {
@@ -952,7 +952,7 @@
           }
         });
 
-        
+
         // INITIALIZATION OF DATERANGEPICKER
         // =======================================================
         $('.js-daterangepicker').daterangepicker();
@@ -988,7 +988,7 @@
 
         cb(start, end);
 
-        
+
         // INITIALIZATION OF JVECTORMAP
         // =======================================================
         var markers = [
