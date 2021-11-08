@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Invoice | Front - Admin &amp; Dashboard Template</title>
+    <title>Invoice | FundStory</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -68,16 +68,16 @@
     <!-- Navbar Vertical -->
     @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "dashboards",
+        "category": "account",
         "subcategory": "",
-        "link": "index.html"
+        "link": "account-invoice.html"
       })
     }
 
     @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/compact.html", {
         "category": "account",
-        "subcategory": "account",
+        "subcategory": "",
         "link": "account-invoice.html"
       })
     }
@@ -607,7 +607,7 @@
           }).init();
         }
 
-        
+
         // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
         // =======================================================
         var sidebar = $('.js-navbar-vertical-aside');
@@ -617,7 +617,7 @@
 
         $('.js-navbar-vertical-aside').addClass('d-print-none');
 
-        
+
         // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
         // =======================================================
         $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
@@ -628,14 +628,14 @@
           }
         });
 
-        
+
         // INITIALIZATION OF UNFOLD
         // =======================================================
         $('.js-hs-unfold-invoker').each(function () {
           var unfold = new HSUnfold($(this)).init();
         });
 
-        
+
         // INITIALIZATION OF FORM SEARCH
         // =======================================================
         $('.js-form-search').each(function () {

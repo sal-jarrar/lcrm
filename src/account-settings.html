@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Settings | Front - Admin &amp; Dashboard Template</title>
+    <title>Settings | FundStory</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -68,16 +68,16 @@
     <!-- Navbar Vertical -->
     @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "dashboards",
+        "category": "account",
         "subcategory": "",
-        "link": "index.html"
+        "link": "account-settings.html"
       })
     }
 
     @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
       @@include("@@autopath/partials/sidebar/compact.html", {
         "category": "account",
-        "subcategory": "account",
+        "subcategory": "",
         "link": "account-settings.html"
       })
     }
@@ -169,7 +169,7 @@
                       <i class="tio-node-multiple-outlined nav-icon"></i> Connected accounts
                     </a>
                   </li>
-                  
+
                   <li class="nav-item">
                     <a class="nav-link" href="#deleteAccountSection">
                       <i class="tio-delete-outlined nav-icon"></i> Delete account
@@ -234,7 +234,7 @@
                 <div class="row">
                   <div class="col-sm-5">
 
-                    
+
                    </div>
                 </div>
                 <!-- End Row -->
@@ -1143,7 +1143,7 @@
               <!-- End Body -->
             </div>
             <!-- End Card -->
-           
+
 
             <!-- Sticky Block End Point -->
             <div id="stickyBlockEndPoint"></div>
@@ -1228,12 +1228,12 @@
           }).init();
         }
 
-        
+
         // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
         // =======================================================
         var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
 
-        
+
         // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
         // =======================================================
         $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
@@ -1244,35 +1244,35 @@
           }
         });
 
-        
+
         // INITIALIZATION OF UNFOLD
         // =======================================================
         $('.js-hs-unfold-invoker').each(function () {
           var unfold = new HSUnfold($(this)).init();
         });
 
-        
+
         // INITIALIZATION OF FORM SEARCH
         // =======================================================
         $('.js-form-search').each(function () {
           new HSFormSearch($(this)).init()
         });
 
-        
+
         // INITIALIZATION OF FILE ATTACH
         // =======================================================
         $('.js-file-attach').each(function () {
           var customFile = new HSFileAttach($(this)).init();
         });
 
-        
+
         // INITIALIZATION OF MASKED INPUT
         // =======================================================
         $('.js-masked-input').each(function () {
           var mask = $.HSCore.components.HSMask.init($(this));
         });
 
-        
+
         // INITIALIZATION OF SELECT2
         // =======================================================
         $('.js-select2-custom').each(function () {
@@ -1315,7 +1315,7 @@
           });
         });
 
-        
+
         // INITIALIZATION OF STICKY BLOCKS
         // =======================================================
         $('.js-sticky-block').each(function () {
@@ -1324,7 +1324,7 @@
           }).init();
         });
 
-        
+
         // INITIALIZATION OF SCROLL NAV
         // =======================================================
         var scrollspy = new HSScrollspy($('body'), {
@@ -1340,7 +1340,7 @@
           }
         }).init();
 
-        
+
         // INITIALIZATION OF PASSWORD STRENGTH MODULE
         // =======================================================
         $('.js-pwstrength').each(function () {

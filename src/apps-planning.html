@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Plainning | Front - Admin &amp; Dashboard Template</title>
+    <title>Planning | FundStory</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -18,6 +18,7 @@
     <!-- bundlecss:vendor [@@autopath] -->
     <link rel="stylesheet" href="@@autopath/assets/vendor/icon-set/style.css">
     <link rel="stylesheet" href="@@autopath/node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="@@autopath/node_modules/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="@@autopath/node_modules/chart.js/dist/Chart.min.css">
     <link rel="stylesheet" href="@@autopath/node_modules/daterangepicker/daterangepicker.css">
     @@if (layoutBuilder.header.layoutMode !== 'default') {
@@ -113,13 +114,13 @@
                         }'>
                           <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Avatar" /><span class="media-body">Clearco</span></span>'>Clearco</option>
                           <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Avatar" /><span class="media-body">Yardline</span></span>'>Yardline</option>
-                          <option value="owner1" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">KickPay</span></span>'>KickPay</option>
+                          <option value="owner1" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">Kickpay</span></span>'>Kickpay</option>
                           <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Avatar" /><span class="media-body">Capchase</span></span>'>Capchase</option>
                         </select>
                        </div>
                       <!-- End Select -->
                     </div>
-                    
+
                     <div class="col-auto mr-4">
                       <span>Funding Target:</span>
                       <a href="#">$500,000</a>
@@ -136,7 +137,7 @@
                                 "dateFormat": "d/m/Y",
                                 "wrap": true
                               }'>
-                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2020">
+                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2022">
                           <div class="input-group-append" data-toggle>
                             <div class="input-group-text">
                               <i class="tio-chevron-down"></i>
@@ -146,12 +147,12 @@
                         <!-- End Flatpickr -->
                       </div>
                     </div>
-                    
+
                   </div>
                 </div>
                 <div class="col-sm-auto">
                   <small class="text-cap mb-2">Capital Partners:</small>
-    
+
                   <div class="d-flex">
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-circle mr-3">
@@ -173,7 +174,7 @@
                       href="user-profile.html"
                       data-toggle="tooltip"
                       data-placement="top"
-                      title="YardLine"
+                      title="Yardline"
                     >
                       <img
                         class="avatar-img"
@@ -186,7 +187,7 @@
                         href="user-profile.html"
                         data-toggle="tooltip"
                         data-placement="top"
-                        title="clearco"
+                        title="Clearco"
                       >
                         <img
                           class="avatar-img"
@@ -194,13 +195,13 @@
                           alt="Image Description"
                         />
                       </a>
-                      
+
                       <a
                         class="avatar"
                         href="user-profile.html"
                         data-toggle="tooltip"
                         data-placement="top"
-                        title="kickpay"
+                        title="Kickpay"
                       >
                         <img
                           class="avatar-img"
@@ -208,7 +209,7 @@
                           alt="Image Description"
                         />
                       </a>
-    
+
                       <a
                         class="avatar avatar-light avatar-circle"
                         href="javascript:;"
@@ -217,14 +218,14 @@
                       >
                         <span class="avatar-initials">+2</span>
                       </a>
-    
+
                     <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
                       <i class="tio-share"></i>
                     </a>
                   </div>
                 </div>
               </div>
-           
+
               </div>
             </div>
           </div>
@@ -250,16 +251,16 @@
           </div>
 
           <!-- <div class="col-auto mb-3">
-          
+
             <button id="js-daterangepicker-predefined" class="btn btn-ghost-secondary dropdown-toggle">
               <i class="tio-date-range"></i>
               <span class="js-daterangepicker-predefined-preview ml-1"></span>
             </button>
-            
+
           </div> -->
 
           <!-- <div class="col-auto mb-3 ml-auto">
-            
+
             <ul class="nav nav-segment" id="connectionsTab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="grid-tab" data-toggle="tab" href="#grid" role="tab" aria-controls="grid" aria-selected="true" title="Column view">
@@ -272,7 +273,7 @@
                 </a>
               </li>
             </ul>
-            
+
           </div> -->
         </div>
         <!-- End Filter -->
@@ -2792,7 +2793,7 @@
     <script src="@@autopath/assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
     <script src="@@autopath/node_modules/select2/dist/js/select2.full.min.js"></script>
     <script src="@@autopath/assets/vendor/hs-add-field/dist/hs-add-field.min.js"></script>
-
+    <script src="@@autopath/node_modules/flatpickr/dist/flatpickr.min.js"></script>
     <script src="@@autopath/node_modules/daterangepicker/moment.min.js"></script>
     <script src="@@autopath/node_modules/daterangepicker/daterangepicker.js"></script>
     <script src="@@autopath/node_modules/clipboard/dist/clipboard.min.js"></script>
@@ -2804,6 +2805,7 @@
     <!-- bundlejs:theme [@@autopath] -->
     <script src="@@autopath/assets/js/hs.core.js"></script>
     <script src="@@autopath/assets/js/hs.select2.js"></script>
+    <script src="@@autopath/assets/js/hs.flatpickr.js"></script>
     <script src="@@autopath/assets/js/hs.sortable.js"></script>
     <script src="@@autopath/assets/js/hs.clipboard.js"></script>
 
@@ -2864,6 +2866,13 @@
         // =======================================================
         $('.js-select2-custom').each(function () {
           var select2 = $.HSCore.components.HSSelect2.init($(this));
+        });
+
+
+        // INITIALIZATION OF FLATPICKR
+        // =======================================================
+        $('.js-flatpickr').each(function () {
+          $.HSCore.components.HSFlatpickr.init($(this));
         });
 
 

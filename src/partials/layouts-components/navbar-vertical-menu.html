@@ -1,5 +1,5 @@
 <!-- Dashboards -->
-<li class="navbar-vertical-aside-has-menu">
+<li class="navbar-vertical-aside-has-menu @@if(category=='dashboards'){show}">
   <a
     class="
       js-navbar-vertical-aside-menu-link
@@ -10,9 +10,9 @@
     title="Dashboards"
   >
     <i class="tio-home-vs-1-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Dashboards</span
-    >
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+      Dashboards
+    </span>
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
@@ -20,36 +20,30 @@
       <a
         class="nav-link @@if(link=='dashboard-alternative.html'){active}"
         href="@@autopath/dashboard-alternative.html"
-        title=""
+        title="Pre-Funding"
       >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="text-truncate"><span class="badge badge-warning badge-pill ml-1">
-          <i class="warning mr-1"></i> Pre-Funding
-        </span></span>
+        <span class="badge badge-warning badge-pill text-truncate">Pre-Funding</span>
       </a>
     </li>
     <li class="nav-item">
       <a
         class="nav-link @@if(link=='funding.html'){active}"
         href="@@autopath/funding.html"
-        title="Alternative"
+        title="Funding"
       >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="badge badge-success badge-pill ml-1">
-          <i class="warning mr-1"></i> Funding
-        </span>
+        <span class="badge badge-success badge-pill text-truncate">Funding</span>
       </a>
     </li>
     <li class="nav-item">
       <a
        class="nav-link @@if(link=='post-funding.html'){active}"
         href="@@autopath/post-funding.html"
-        title="Default"
+        title="Post-Funding"
       >
         <span class="tio-circle nav-indicator-icon"></span>
-        <span class="badge badge-danger badge-pill ml-1">
-          <i class="warning mr-2"></i>Post-Funding
-        </span>
+        <span class="badge badge-danger badge-pill text-truncate">Post-Funding</span>
       </a>
     </li>
   </ul>
@@ -576,30 +570,17 @@
 <!-- End Pages -->
 
 <!-- Apps -->
-<li class="navbar-vertical-aside-has-menu">
-  <a
-    class="
-      js-navbar-vertical-aside-menu-link
-      nav-link nav-link-toggle
-      @@if(category=='apps'){active}
-    "
-    href="javascript:;"
-    title="Apps"
-  >
+<li class="navbar-vertical-aside-has-menu @@if(category=='apps'){show}">
+  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='apps'){active}" href="javascript:;" title="Apps">
     <i class="tio-apps nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Apps
-      </span
-    >
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+      Apps
+    </span>
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
-      <a
-        class="nav-link @@if(link=='apps-planning.html'){active}"
-        href="@@autopath/apps-planning.html"
-        title="Planning"
-      >
+      <a class="nav-link @@if(link=='apps-planning.html'){active}" href="@@autopath/apps-planning.html" title="Planning">
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Planning</span>
       </a>
@@ -621,28 +602,34 @@
 <!-- User Profile -->
 <li class="nav-item">
   <a
-    class="nav-link @@if(link=='user-profile-my-profile.html'){active}"
+    class="nav-link @@if(link=='user-profile.html'){active}"
     href="@@autopath/user-profile.html"
-    title="My Profile"
+    title="Company Profile"
   >
     <i class="tio-visible-outlined nav-icon"></i>
-    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"
-      >Company Profile</span
-    >
+    <span class="text-truncate">Company Profile</span>
   </a>
 </li>
-<!--beginning of account-->
-<li class="navbar-vertical-aside-has-menu">
-  <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle @@if(category=='account'){active}"
-    href="javascript:;" title="Account">
+<!-- End User Profile -->
+
+<!-- Account -->
+<li class="navbar-vertical-aside-has-menu @@if(category=='account'){show}">
+  <a
+    class="
+      js-navbar-vertical-aside-menu-link
+      nav-link nav-link-toggle
+      @@if(category=='account'){active}
+    "
+    href="javascript:;"
+    title="Account"
+  >
     <i class="tio-home-vs-1-outlined nav-icon"></i>
     <span class="nav-compact-title text-truncate">Account</span>
   </a>
 
   <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
     <li class="nav-item">
-      <a class="nav-link @@if(link=='account-settings.html'){active}" href="@@autopath/account-settings.html"
-        title="Settings">
+      <a class="nav-link @@if(link=='account-settings.html'){active}" href="@@autopath/account-settings.html" title="Settings">
         <span class="tio-circle nav-indicator-icon"></span>
         <span class="text-truncate">Settings</span>
       </a>
@@ -967,10 +954,10 @@
 </li> -->
 <!--documentation-->
 <li class="nav-item @@if(category=='documentation'){active}">
-  <a class="nav-link " href="#" title="Documentation">
+  <a class="nav-link disabled text-dark" href="#" title="Documentation">
     <i class="tio-book-opened nav-icon"></i>
-    <span class="nav-compact-title text-truncate"  >Documentation</span>
-    <span class="badge badge-primary badge-pill">v1.1</span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Documentation <span class="badge badge-primary badge-pill ml-1">v1.1</span>
+    </span>
   </a>
 </li>
 
