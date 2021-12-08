@@ -2,37 +2,71 @@
 <html lang="en">
   <head>
     <!-- Required Meta Tags Always Come First -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Title -->
     <title>Targeting | FundStory</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="@@autopath/favicon.ico">
+    <link rel="shortcut icon" href="@@autopath/favicon.ico" />
 
     <!-- Font -->
-    <link href="@@vars.googleFont" rel="stylesheet">
+    <link href="@@vars.googleFont" rel="stylesheet" />
 
     <!-- CSS Implementing Plugins -->
     <!-- bundlecss:vendor [@@autopath] -->
-    <link rel="stylesheet" href="@@autopath/assets/vendor/icon-set/style.css">
-    <link rel="stylesheet" href="@@autopath/node_modules/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="@@autopath/node_modules/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="@@autopath/node_modules/chart.js/dist/Chart.min.css">
-    <link rel="stylesheet" href="@@autopath/node_modules/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="@@autopath/assets/vendor/icon-set/style.css" />
+    <link
+      rel="stylesheet"
+      href="@@autopath/node_modules/select2/dist/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="@@autopath/node_modules/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="@@autopath/node_modules/chart.js/dist/Chart.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="@@autopath/node_modules/daterangepicker/daterangepicker.css"
+    />
     @@if (layoutBuilder.header.layoutMode !== 'default') {
-      <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+    <link
+      rel="stylesheet"
+      href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css"
+    />
     }
 
     <!-- CSS Front Template -->
     <!-- bundlecss:theme [@@autopath] @@vars.version -->
-    <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+    <link rel="stylesheet" href="@@autopath/assets/css/theme.css" />
   </head>
 
-  <body class="@@if(layoutBuilder.header.layoutMode === 'default'){has-navbar-vertical-aside navbar-vertical-aside-show-xl} @@if(layoutBuilder.sidebarLayout === 'compact'){navbar-vertical-aside-compact-mode navbar-vertical-aside-compact-mini-mode} @@if(layoutBuilder.sidebarLayout === 'mini'){navbar-vertical-aside-mini-mode} footer-offset">
-    @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.sidebarLayout !== 'mini') {
-      <script src="@@autopath/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+  <body
+    class="
+      @@if(layoutBuilder.header.layoutMode
+      ===
+      'default'){has-navbar-vertical-aside
+      navbar-vertical-aside-show-xl}
+      @@if(layoutBuilder.sidebarLayout
+      ===
+      'compact'){navbar-vertical-aside-compact-mode
+      navbar-vertical-aside-compact-mini-mode}
+      @@if(layoutBuilder.sidebarLayout
+      ===
+      'mini'){navbar-vertical-aside-mini-mode}
+      footer-offset
+    "
+  >
+    @@if (layoutBuilder.sidebarLayout !== 'compact' &&
+    layoutBuilder.sidebarLayout !== 'mini') {
+    <script src="@@autopath/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
     }
 
     <!-- Search Form -->
@@ -41,58 +75,44 @@
 
     <!-- ========== HEADER ========== -->
     @@if (layoutBuilder.header.layoutMode === 'default') {
-      @@include("@@autopath/partials/header/main.html")
-    }
-
-    @@if (layoutBuilder.header.layoutMode === 'single') {
-      @@if (layoutBuilder.header.containerMode === 'container-fluid') {
-        @@include("@@autopath/partials/header/main-fluid.html")
-      }
-
-      @@if (layoutBuilder.header.containerMode === 'container') {
-        @@include("@@autopath/partials/header/main-container.html")
-      }
-    }
-
-    @@if (layoutBuilder.header.layoutMode === 'double') {
-      @@if (layoutBuilder.header.containerMode === 'container-fluid') {
-        @@include("@@autopath/partials/header/double-line-fluid.html")
-      }
-
-      @@if (layoutBuilder.header.containerMode === 'container') {
-        @@include("@@autopath/partials/header/double-line-container.html")
-      }
-    }
+    @@include("@@autopath/partials/header/main.html") } @@if
+    (layoutBuilder.header.layoutMode === 'single') { @@if
+    (layoutBuilder.header.containerMode === 'container-fluid') {
+    @@include("@@autopath/partials/header/main-fluid.html") } @@if
+    (layoutBuilder.header.containerMode === 'container') {
+    @@include("@@autopath/partials/header/main-container.html") } } @@if
+    (layoutBuilder.header.layoutMode === 'double') { @@if
+    (layoutBuilder.header.containerMode === 'container-fluid') {
+    @@include("@@autopath/partials/header/double-line-fluid.html") } @@if
+    (layoutBuilder.header.containerMode === 'container') {
+    @@include("@@autopath/partials/header/double-line-container.html") } }
     <!-- ========== END HEADER ========== -->
 
     <!-- ========== MAIN CONTENT ========== -->
     <!-- Navbar Vertical -->
-    @@if (layoutBuilder.sidebarLayout !== 'compact' && layoutBuilder.header.layoutMode === 'default') {
-      @@include("@@autopath/partials/sidebar/main.html", {
-        "category": "apps",
-        "subcategory": "",
-        "link": "apps-targeting.html"
-      })
-    }
-
-    @@if (layoutBuilder.sidebarLayout === 'compact' && layoutBuilder.header.layoutMode === 'default') {
-      @@include("@@autopath/partials/sidebar/compact.html", {
-        "category": "apps",
-        "subcategory": "",
-        "link": "apps-targeting.html"
-      })
-    }
+    @@if (layoutBuilder.sidebarLayout !== 'compact' &&
+    layoutBuilder.header.layoutMode === 'default') {
+    @@include("@@autopath/partials/sidebar/main.html", { "category": "apps",
+    "subcategory": "", "link": "apps-targeting.html" }) } @@if
+    (layoutBuilder.sidebarLayout === 'compact' &&
+    layoutBuilder.header.layoutMode === 'default') {
+    @@include("@@autopath/partials/sidebar/compact.html", { "category": "apps",
+    "subcategory": "", "link": "apps-targeting.html" }) }
     <!-- End Navbar Vertical -->
 
     <main id="content" role="main" class="main">
       <!-- Content -->
       <div class="content @@layoutBuilder.header.containerMode">
-         <!-- Page Header -->
-         <div class="page-header">
+        <!-- Page Header -->
+        <div class="page-header">
           <div class="media mb-3">
             <!-- Avatar -->
             <div class="avatar avatar-xl avatar-4by3 mr-2">
-              <img class="avatar avatar-xl avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Image Description">
+              <img
+                class="avatar avatar-xl avatar-circle mr-3"
+                src="@@autopath/assets/img/offer-partners/capChase2.png"
+                alt="Image Description"
+              />
             </div>
             <!-- End Avatar -->
 
@@ -105,20 +125,45 @@
                     <div class="col-auto">
                       <!-- Select -->
                       <div class="select2-custom">
-                        <select class="js-select2-custom custom-select-sm" size="1" style="opacity: 0;" id="ownerLabel"
-                        data-hs-select2-options='{
+                        <select
+                          class="js-select2-custom custom-select-sm"
+                          size="1"
+                          style="opacity: 0"
+                          id="ownerLabel"
+                          data-hs-select2-options='{
                           "minimumResultsForSearch": "Infinity",
                           "customClass": "custom-select custom-select-sm custom-select-borderless pl-0",
                           "dropdownAutoWidth": true,
                           "width": true
-                        }'>
-                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Avatar" /><span class="media-body">Clearco</span></span>'>Clearco</option>
-                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Avatar" /><span class="media-body">Yardline</span></span>'>Yardline</option>
-                          <option value="owner1" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">Kickpay</span></span>'>Kickpay</option>
-                          <option value="owner1" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Avatar" /><span class="media-body">Capchase</span></span>'>Capchase</option>
-
+                        }'
+                        >
+                          <option
+                            value="owner2"
+                            data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Avatar" /><span class="media-body">Clearco</span></span>'
+                          >
+                            Clearco
+                          </option>
+                          <option
+                            value="owner2"
+                            data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Avatar" /><span class="media-body">Yardline</span></span>'
+                          >
+                            Yardline
+                          </option>
+                          <option
+                            value="owner1"
+                            data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">Kickpay</span></span>'
+                          >
+                            Kickpay
+                          </option>
+                          <option
+                            value="owner1"
+                            selected
+                            data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/capChase2.png" alt="Avatar" /><span class="media-body">Capchase</span></span>'
+                          >
+                            Capchase
+                          </option>
                         </select>
-                       </div>
+                      </div>
                       <!-- End Select -->
                     </div>
 
@@ -132,13 +177,27 @@
                         <div class="col-auto">Deadline:</div>
 
                         <!-- Flatpickr -->
-                        <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless col input-group input-group-sm"
-                              data-hs-flatpickr-options='{
+                        <div
+                          id="projectDeadlineFlatpickr"
+                          class="
+                            js-flatpickr
+                            flatpickr-custom flatpickr-custom-borderless
+                            col
+                            input-group input-group-sm
+                          "
+                          data-hs-flatpickr-options='{
                                 "appendTo": "#projectDeadlineFlatpickr",
                                 "dateFormat": "d/m/Y",
                                 "wrap": true
-                              }'>
-                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2022">
+                              }'
+                        >
+                          <input
+                            type="text"
+                            class="flatpickr-custom-form-control form-control"
+                            placeholder="Select dates"
+                            data-input
+                            value="29/06/2022"
+                          />
                           <div class="input-group-append" data-toggle>
                             <div class="input-group-text">
                               <i class="tio-chevron-down"></i>
@@ -148,7 +207,6 @@
                         <!-- End Flatpickr -->
                       </div>
                     </div>
-
                   </div>
                 </div>
                 <div class="col-sm-auto">
@@ -166,23 +224,23 @@
                       >
                         <img
                           class="avatar-img"
-                          src="@@autopath/assets/img/offer-partners/capChase2.png"
+                          src="@@autopath/assets/img/160x160/img3.jpg"
                           alt="Image Description"
                         />
                       </a>
                       <a
-                      class="avatar"
-                      href="user-profile.html"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Yardline"
-                    >
-                      <img
-                        class="avatar-img"
-                        src="@@autopath/assets/img/offer-partners/yardlineDetail.png"
-                        alt="Image Description"
-                      />
-                    </a>
+                        class="avatar"
+                        href="user-profile.html"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Yardline"
+                      >
+                        <img
+                          class="avatar-img"
+                          src="@@autopath/assets/img/160x160/img4.jpg"
+                          alt="Image Description"
+                        />
+                      </a>
                       <a
                         class="avatar"
                         href="user-profile.html"
@@ -192,7 +250,7 @@
                       >
                         <img
                           class="avatar-img"
-                          src="@@autopath/assets/img/offer-partners/clearcoDetail.png"
+                          src="@@autopath/assets/img/160x160/img5.jpg"
                           alt="Image Description"
                         />
                       </a>
@@ -206,7 +264,7 @@
                       >
                         <img
                           class="avatar-img"
-                          src="@@autopath/assets/img/offer-partners/kickpay.png"
+                          src="@@autopath/assets/img/160x160/img7.jpg"
                           alt="Image Description"
                         />
                       </a>
@@ -220,12 +278,17 @@
                         <span class="avatar-initials">+2</span>
                       </a>
 
-                    <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
-                      <i class="tio-share"></i>
-                    </a>
+                      <a
+                        class="btn btn-icon btn-primary rounded-circle"
+                        href="javascript:;"
+                        data-toggle="modal"
+                        data-target="#shareWithPeopleModal"
+                      >
+                        <i class="tio-share"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -234,14 +297,14 @@
           <!-- Nav -->
           <!-- Header -->
 
-
           <!-- End Header -->
           <!-- Body -->
           <div class="card-body">
             <!-- Bar Chart -->
-            <div class="chartjs-custom" style="height: 18rem;">
-              <canvas class="js-chart"
-                      data-hs-chartjs-options='{
+            <div class="chartjs-custom" style="height: 18rem">
+              <canvas
+                class="js-chart"
+                data-hs-chartjs-options='{
                         "type": "line",
                         "data": {
                           "labels": ["Feb","Jan","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
@@ -316,7 +379,8 @@
                             "intersect": true
                           }
                         }
-                      }'>
+                      }'
+              >
               </canvas>
             </div>
             <!-- End Bar Chart -->
@@ -344,9 +408,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -370,7 +435,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -400,9 +466,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -426,7 +493,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -455,9 +523,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -481,7 +550,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -511,9 +581,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -537,7 +608,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -569,9 +641,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -595,7 +668,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -625,9 +699,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -651,7 +726,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -681,9 +757,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -707,7 +784,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -737,9 +815,10 @@
 
                   <div class="col-7">
                     <!-- Line Chart -->
-                    <div class="chartjs-custom" style="height: 2rem;">
-                      <canvas class="js-chart"
-                              data-hs-chartjs-options='{
+                    <div class="chartjs-custom" style="height: 2rem">
+                      <canvas
+                        class="js-chart"
+                        data-hs-chartjs-options='{
                                 "type": "line",
                                 "data": {
                                     "labels": ["value","value","value","value","value","value","value"],
@@ -763,7 +842,8 @@
                                     },
                                     "tooltips": false
                                 }
-                              }'>
+                              }'
+                      >
                       </canvas>
                     </div>
                     <!-- End Line Chart -->
@@ -781,12 +861,9 @@
 
       <!-- Footer -->
       @@if (layoutBuilder.header.containerMode === 'container-fluid') {
-        @@include("@@autopath/partials/footer/main.html")
-      }
-
-      @@if (layoutBuilder.header.containerMode === 'container') {
-        @@include("@@autopath/partials/footer/container.html")
-      }
+      @@include("@@autopath/partials/footer/main.html") } @@if
+      (layoutBuilder.header.containerMode === 'container') {
+      @@include("@@autopath/partials/footer/container.html") }
       <!-- End Footer -->
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
@@ -830,7 +907,7 @@
     <script src="@@autopath/node_modules/appear/dist/appear.min.js"></script>
     <script src="@@autopath/node_modules/circles.js/circles.min.js"></script>
     @@if (layoutBuilder.header.layoutMode !== 'default') {
-      <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
     }
 
     <!-- JS Front -->
@@ -1106,7 +1183,10 @@
 
     <!-- IE Support -->
     <script>
-      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="@@autopath/assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+        document.write(
+          '<script src="@@autopath/assets/vendor/babel-polyfill/polyfill.min.js"><\/script>'
+        );
     </script>
   </body>
 </html>
