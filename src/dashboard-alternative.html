@@ -154,67 +154,79 @@
       <div class="content @@layoutBuilder.header.containerMode">
         <!-- Page Header -->
         <div class="page-header">
-          <div class="media mb-3">
-            <!-- Avatar -->
-            <div class="avatar avatar-xl avatar-4by3 mr-2">
-              <img class="avatar avatar-xl avatar-circle mr-3" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Image Description">
-            </div>
-            <!-- End Avatar -->
-
-            <div class="media-body">
-              <div class="row mt-2">
-                <div class="col-lg mb-3 mb-lg-0">
-                  <h1 class="page-header-title">Funding Score Tracker</h1>
-
-                  <div class="row align-items-center">
+          <div class="row gx-2 gx-lg-3">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">Total users</h6>
+  
+                  <div class="row align-items-center gx-2">
+                    <div class="col">
+                      <span class="js-counter display-4 text-dark">24</span>
+                      <span class="text-body font-size-sm ml-1">from 22</span>
+                    </div>
+  
                     <div class="col-auto">
-                      <!-- Select -->
-                      <div class="select2-custom">
-                        <select class="js-select2-custom custom-select-sm" size="1" style="opacity: 0;" id="ownerLabel"
-                        data-hs-select2-options='{
-                          "minimumResultsForSearch": "Infinity",
-                          "customClass": "custom-select custom-select-sm custom-select-borderless pl-0",
-                          "dropdownAutoWidth": true,
-                          "width": true
-                        }'>
-                          <option value="owner2" selected data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Avatar" /><span class="media-body">Clearco</span></span>'>Clearco</option>
-                          <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Avatar" /><span class="media-body">Yardline</span></span>'>Yardline</option>
-                          <option value="owner1" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Avatar" /><span class="media-body">Kickpay</span></span>'>Kickpay</option>
-
-                        </select>
-                       </div>
-                      <!-- End Select -->
+                      <span class="badge badge-soft-success p-1">
+                        <i class="tio-trending-up"></i> 5.0%
+                      </span>
                     </div>
-
-                    <div class="col-auto mr-4">
-                      <span>Funding Target:</span>
-                      <a href="#">$500,000</a>
-                    </div>
-
-                    <div class="col-auto">
-                      <div class="row align-items-center g-0">
-                        <div class="col-auto">Deadline:</div>
-
-                        <!-- Flatpickr -->
-                        <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless col input-group input-group-sm"
-                              data-hs-flatpickr-options='{
-                                "appendTo": "#projectDeadlineFlatpickr",
-                                "dateFormat": "d/m/Y",
-                                "wrap": true
-                              }'>
-                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2022">
-                          <div class="input-group-append" data-toggle>
-                            <div class="input-group-text">
-                              <i class="tio-chevron-down"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Flatpickr -->
-                      </div>
-                    </div>
-
                   </div>
+                  <!-- End Row -->
                 </div>
+              </div>
+              <!-- End Card -->
+            </div>
+  
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">Active members</h6>
+  
+                  <div class="row align-items-center gx-2">
+                    <div class="col">
+                      <span class="js-counter display-4 text-dark">12</span>
+                      <span class="text-body font-size-sm ml-1">from 11</span>
+                    </div>
+  
+                    <div class="col-auto">
+                      <span class="badge badge-soft-success p-1">
+                        <i class="tio-trending-up"></i> 1.2%
+                      </span>
+                    </div>
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+  
+            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2">New/returning</h6>
+  
+                  <div class="row align-items-center gx-2">
+                    <div class="col">
+                      <span class="js-counter display-4 text-dark">56</span>
+                      <span class="display-4 text-dark">%</span>
+                      <span class="text-body font-size-sm ml-1">from 48.7</span>
+                    </div>
+  
+                    <div class="col-auto">
+                      <span class="badge badge-soft-danger p-1">
+                        <i class="tio-trending-down"></i> 2.8%
+                      </span>
+                    </div>
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
                 <div class="col-sm-auto">
                   <small class="text-cap mb-2">Team Members:</small>
 
@@ -290,42 +302,7 @@
                   </div>
                 </div>
               </div>
-                <!-- <div class="col-lg-auto">
-                  <small class="text-cap mb-2">Team members:</small>
-
-                  <div class="d-flex">
-
-
-                    <div class="avatar-group avatar-circle mr-3">
-                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
-                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
-                      </a>
-                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Linda Bates">
-                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
-                      </a>
-                      <a class="avatar avatar-soft-info" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="#digitalmarketing">
-                        <span class="avatar-initials">
-                          <i class="tio-group-senior"></i>
-                        </span>
-                      </a>
-                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="David Harrison">
-                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
-                      </a>
-                      <a class="avatar avatar-soft-dark" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Antony Taylor">
-                        <span class="avatar-initials">A</span>
-                      </a>
-
-                      <a class="avatar avatar-light avatar-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
-                        <span class="avatar-initials">+2</span>
-                      </a>
-                    </div>
-
-
-                    <a class="btn btn-icon btn-primary rounded-circle" href="javascript:;" data-toggle="modal" data-target="#shareWithPeopleModal">
-                      <i class="tio-share"></i>
-                    </a>
-                  </div>
-                </div> -->
+               
               </div>
             </div>
           </div>
@@ -339,107 +316,271 @@
 
           <!-- Body -->
           <div class="card-body">
-            <div class="row align-items-sm-center mb-4">
-              <div class="col-sm mb-3 mb-sm-0">
+            
+           <!-- Table -->
+           <div class="table-responsive">
+            <table class="table table-borderless table-thead-bordered table-align-middle card-table mb-5">
+              <thead class="thead-light">
+                <tr>
+                  <th>Project name</th>
+                  <th>Members</th>
+                  <th>Spent</th>
+                  <th>Hours</th>
+                  <th>Completion</th>
+                </tr>
+              </thead>
 
-                <div class="d-flex align-items-center">
-                  <span class="mb-0 fundingScore"><h1>56</h1></span>
+              <tbody>
+                <tr>
+                  <td>
+                    <a class="media align-items-center" href="project.html">
+                      <img class="avatar avatar-sm mr-3" src="@@autopath/assets/svg/brands/spec.svg" alt="Image Description">
+                      <div class="media-body">
+                        <span class="d-block h5 text-hover-primary mb-0">Install Front pay</span>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-group-xs avatar-circle">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="David Harrison">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-info" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Lisa Iston">
+                        <span class="avatar-initials">L</span>
+                      </a>
+                      <a class="avatar avatar-light avatar-circle" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Lewis Clarke, Chris Mathew and 3 more">
+                        <span class="avatar-initials">+5</span>
+                      </a>
+                    </div>
+                    <!-- End Avatar Group -->
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">$25,000</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">34</span>
+                      <span class="badge badge-soft-danger p-1 ml-2">
+                        <i class="tio-trending-down"></i> 1.8
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0 mr-2">26%</span>
+                      <div class="progress table-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 26%" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
 
-                  <span class="text-success ml-2">
-                    <i class="tio-trending-up"></i> 25.3%
-                  </span>
+                <tr>
+                  <td>
+                    <a class="media align-items-center" href="project.html">
+                      <img class="avatar avatar-sm mr-3" src="@@autopath/assets/svg/brands/mailchimp.svg" alt="Image Description">
+                      <div class="media-body">
+                        <span class="d-block h5 text-hover-primary mb-0">Update subscription method <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-group-xs avatar-circle">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img6.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img7.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-danger" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Adam Keep">
+                        <span class="avatar-initials">A</span>
+                      </a>
+                    </div>
+                    <!-- End Avatar Group -->
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">$5,783</span>
+                      <span class="badge badge-soft-success p-1 ml-2">
+                        <i class="tio-trending-up"></i> 7.3%
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">73.1</span>
+                      <span class="badge badge-soft-success p-1 ml-2">
+                        <i class="tio-trending-up"></i> 5.0
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0 mr-2">100%</span>
+                      <div class="progress table-progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a class="media align-items-center" href="project.html">
+                      <div class="avatar avatar-sm avatar-soft-primary avatar-circle mr-3">
+                        <span class="avatar-initials">I</span>
+                      </div>
+                      <div class="media-body">
+                        <span class="d-block h5 text-hover-primary mb-0">Increase productivity with reviews</span>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-group-xs avatar-circle">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Finch Hoot">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img5.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-dark" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Bob Bardly">
+                        <span class="avatar-initials">B</span>
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Linda Bates">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img8.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Ella Lauda">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img9.jpg" alt="Image Description">
+                      </a>
+                    </div>
+                    <!-- End Avatar Group -->
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">$36,678</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">68.7</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0 mr-2">7%</span>
+                      <div class="progress table-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 7%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a class="media align-items-center" href="project.html">
+                      <img class="avatar avatar-sm mr-3" src="@@autopath/assets/svg/brands/atlassian.svg" alt="Image Description">
+                      <div class="media-body">
+                        <span class="d-block h5 text-hover-primary mb-0">Develop our mobile app <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-group-xs avatar-circle">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img6.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img7.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-danger" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Adam Keep">
+                        <span class="avatar-initials">A</span>
+                      </a>
+                    </div>
+                    <!-- End Avatar Group -->
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">$2,623</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">62.4</span>
+                      <span class="badge badge-soft-success p-1 ml-2">
+                        <i class="tio-trending-up"></i> 2.2
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0 mr-2">100%</span>
+                      <div class="progress table-progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a class="media align-items-center" href="project.html">
+                      <img class="avatar avatar-sm mr-3" src="@@autopath/assets/svg/brands/google-webdev.svg" alt="Image Description">
+                      <div class="media-body">
+                        <span class="d-block h5 text-hover-primary mb-0">Get a complete store audit</span>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <!-- Avatar Group -->
+                    <div class="avatar-group avatar-group-xs avatar-circle">
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="David Harrison">
+                        <img class="avatar-img" src="@@autopath/assets/img/160x160/img3.jpg" alt="Image Description">
+                      </a>
+                      <a class="avatar avatar-soft-info" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Lisa Iston">
+                        <span class="avatar-initials">L</span>
+                      </a>
+                      <a class="avatar avatar-light avatar-circle" href="user-profile.html" data-toggle="tooltip" data-placement="top" title="Lewis Clarke, Chris Mathew and 3 more">
+                        <span class="avatar-initials">+5</span>
+                      </a>
+                    </div>
+                    <!-- End Avatar Group -->
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">$9,000</span>
+                      <span class="badge badge-soft-danger p-1 ml-2">
+                        <i class="tio-trending-down"></i> 0.4
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0">7</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <span class="mb-0 mr-2">42%</span>
+                      <div class="progress table-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          
+          <!-- End Table -->
                 </div>
-              </div>
-
-              <div class="col-sm-auto">
-                <!-- Legend Indicators -->
-                <div class="row font-size-sm">
-                  <div class="col-auto">
-                    <span class="legend-indicator bg-primary"></span>Funding Score
-                  </div>
-                  <div class="col-auto">
-                    <span class="legend-indicator bg-info"></span>Goal Line
-                  </div>
-                </div>
-                <!-- End Legend Indicators -->
-              </div>
-            </div>
-            <!-- End Row -->
-
-            <!-- Bar Chart -->
-            <div class="chartjs-custom" style="height: 18rem;">
-              <canvas id="updatingData"
-                      data-hs-chartjs-options='{
-                        "type": "line",
-                        "data": {
-                           "labels": ["Feb","Jan","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-                           "datasets": [{
-                            "backgroundColor": ["rgba(55, 125, 255, .5)", "rgba(255, 255, 255, .2)"],
-                            "borderColor": "@@vars.style.color",
-                            "borderWidth": 2,
-                            "pointRadius": 0,
-                            "hoverBorderColor": "@@vars.style.color",
-                            "pointBackgroundColor": "@@vars.style.color",
-                            "pointBorderColor": "#fff",
-                            "pointHoverRadius": 0
-                          },
-                          {
-                            "backgroundColor": ["rgba(0, 201, 219, .5)", "rgba(255, 255, 255, .2)"],
-                            "borderColor": "#00c9db",
-                            "borderWidth": 2,
-                            "pointRadius": 0,
-                            "hoverBorderColor": "#00c9db",
-                            "pointBackgroundColor": "#00c9db",
-                            "pointBorderColor": "#fff",
-                            "pointHoverRadius": 0
-                          }]
-                        },
-                        "options": {
-                          "gradientPosition": {"y1": 200},
-                           "scales": {
-                              "yAxes": [{
-                                "gridLines": {
-                                  "color": "#e7eaf3",
-                                  "drawBorder": false,
-                                  "zeroLineColor": "#e7eaf3"
-                                },
-                                "ticks": {
-                                  "min": 0,
-                                  "max": 100,
-                                  "stepSize": 20,
-                                  "fontColor": "#97a4af",
-                                  "fontFamily": "Open Sans, sans-serif",
-                                  "padding": 10
-                                }
-                              }],
-                              "xAxes": [{
-                                "gridLines": {
-                                  "display": false,
-                                  "drawBorder": false
-                                },
-                                "ticks": {
-                                  "fontSize": 12,
-                                  "fontColor": "#97a4af",
-                                  "fontFamily": "Open Sans, sans-serif",
-                                  "padding": 5
-                                }
-                              }]
-                          },
-                          "tooltips": {
-                            "hasIndicator": true,
-                            "mode": "index",
-                            "intersect": false,
-                            "lineMode": true,
-                            "lineWithLineColor": "rgba(19, 33, 68, 0.075)"
-                          },
-                          "hover": {
-                            "mode": "nearest",
-                            "intersect": true
-                          }
-                        }
-                      }'>
-              </canvas>
-            </div>
             <!-- End Bar Chart -->
           </div>
           <!-- End Body -->
@@ -456,96 +597,74 @@
         <div class="row">
           <div class="col-lg-4 mb-3 mb-lg-5">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card">
               <!-- Header -->
               <div class="card-header">
-                <h4 class="card-header-title">Funding Score</h4>
+                <h4 class="card-header-title">Expenses</h4>
 
-                <!-- Unfold -->
-                <div class="hs-unfold">
-                  <a class="js-hs-unfold-invoker btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="javascript:;"
-                     data-hs-unfold-options='{
-                       "target": "#reportsOverviewDropdown1",
-                       "type": "css-animation"
-                     }'>
-                    <i class="tio-more-vertical"></i>
-                  </a>
-
-                  <div id="reportsOverviewDropdown1" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right mt-1">
-                    <span class="dropdown-header">Settings</span>
-
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-share dropdown-item-icon"></i> Share reports
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-download-to dropdown-item-icon"></i> Download
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-alt dropdown-item-icon"></i> Connect other apps
-                    </a>
-
-                    <div class="dropdown-divider"></div>
-
-                    <span class="dropdown-header">Feedback</span>
-
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-chat-outlined dropdown-item-icon"></i> Report
-                    </a>
-                  </div>
-                </div>
-                <!-- End Unfold -->
+                <!-- Nav -->
+                <ul class="nav nav-segment" id="expensesTab" role="tablist">
+                  <li class="nav-item" data-toggle="chart" data-datasets="0" data-trigger="click" data-action="toggle">
+                    <a class="nav-link active" href="javascript:;" data-toggle="tab">This week</a>
+                  </li>
+                  <li class="nav-item" data-toggle="chart" data-datasets="1" data-trigger="click" data-action="toggle">
+                    <a class="nav-link" href="javascript:;" data-toggle="tab">Last week</a>
+                  </li>
+                </ul>
+                <!-- End Nav -->
               </div>
               <!-- End Header -->
 
               <!-- Body -->
-              <div class="card-body text-center">
-                <!-- Badge -->
-                <div class="h3">
-                  <span class="badge badge-soft-info badge-pill">
-                    <i class="tio-checkmark-circle"></i> On track
-                  </span>
-                </div>
-                <!-- End Badge -->
-
-                <!-- Chart Half -->
-                <div class="chartjs-doughnut-custom" style="height: 12rem;">
-                  <canvas class="js-chartjs-doughnut-half"
+              <div class="card-body">
+                <!-- Pie Chart -->
+                <div class="chartjs-custom mb-3 mb-sm-5" style="height: 14rem;">
+                  <canvas id="updatingData"
                           data-hs-chartjs-options='{
-                          "type": "doughnut",
-                          "data": {
-                            "labels": ["Current status", "Goal"],
-                            "datasets": [{
-                              "data": [64, 35],
-                              "backgroundColor": ["@@vars.style.color", "gulpRGBA[@@vars.style.color,.35]"],
-                              "borderWidth": 4,
-                              "hoverBorderColor": "#ffffff"
-                            }]
-                          }
-                        }'></canvas>
+                            "type": "doughnut",
+                            "data": {
+                              "labels": ["USD", "USD", "USD"],
+                              "datasets": [{
+                                "backgroundColor": ["@@vars.style.color", "#00c9db", "#e7eaf3"],
+                                "borderWidth": 5,
+                                "hoverBorderColor": "#fff"
+                              }]
+                            },
+                            "options": {
+                              "cutoutPercentage": 80,
+                              "tooltips": {
+                                "postfix": "k",
+                                "hasIndicator": true,
+                                "mode": "index",
+                                "intersect": false
+                              },
+                              "hover": {
+                                "mode": "nearest",
+                                "intersect": true
+                              }
+                            }
+                          }'></canvas>
+                </div>
+                <!-- End Pie Chart -->
 
-                  <div class="chartjs-doughnut-custom-stat mt-n4">
-                    <small class="h2 mb-0 mt-0">funding score</small>
-                    <h1 class="mt-0">56</h1>
+                <!-- Legend Indicators -->
+                <div class="row justify-content-center">
+                  <div class="col-auto mb-3 mb-sm-0">
+                    <span class="card-title h4">$2,332.00</span>
+                    <span class="legend-indicator bg-primary"></span> Marketing
+                  </div>
+
+                  <div class="col-auto mb-3 mb-sm-0">
+                    <span class="card-title h4">$10,452.00</span>
+                    <span class="legend-indicator bg-info"></span> Bills
+                  </div>
+
+                  <div class="col-auto">
+                    <span class="card-title h4">$56,856.00</span>
+                    <span class="legend-indicator"></span> Others
                   </div>
                 </div>
-                <!-- End Chart Half -->
-
-                <hr>
-
-                <div class="row">
-                  <div class="col text-right">
-                    <span class="d-block h4 mb-0">45</span>
-                    <span class="d-block">last week</span>
-                  </div>
-
-                  <div class="col column-divider text-left">
-                    <span class="d-block h4 text-success mb-0">
-                      <i class="tio-trending-up"></i> 5%
-                    </span>
-                    <span class="d-block">since last week</span>
-                  </div>
-                </div>
-                <!-- End Row -->
+                <!-- End Legend Indicators -->
               </div>
               <!-- End Body -->
             </div>
@@ -553,247 +672,167 @@
           </div>
 
           <div class="col-lg-8 mb-3 mb-lg-5">
-            <!-- Card -->
-            <div class="card mb-3 mb-lg-5">
-              <!-- Header -->
-              <div class="card-header">
-                <h5 class="card-header-title">Saved Partners</h5>
+           <!-- Card -->
+        <div class="card mb-3 mb-lg-5">
+          <!-- Header -->
+          <div class="card-header">
+            <h4 class="card-header-title">Audience overview <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="This report is based on 100% of sessions."></i></h4>
 
-                <!-- Unfold -->
-                <div class="hs-unfold">
-                  <a class="js-hs-unfold-invoker btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="javascript:;"
-                     data-hs-unfold-options='{
-                       "target": "#projectReportDropdown",
-                       "type": "css-animation"
-                     }'>
-                    <i class="tio-more-vertical"></i>
-                  </a>
+            <!-- Unfold -->
+            <div class="hs-unfold">
+              <a class="js-hs-unfold-invoker btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="javascript:;"
+                 data-hs-unfold-options='{
+                   "target": "#reportsOverviewDropdown2",
+                   "type": "css-animation"
+                 }'>
+                <i class="tio-more-vertical"></i>
+              </a>
 
-                  <div id="projectReportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right mt-1">
-                    <span class="dropdown-header">Settings</span>
+              <div id="reportsOverviewDropdown2" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right mt-1">
+                <span class="dropdown-header">Settings</span>
 
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-share dropdown-item-icon"></i> Share connections
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-info-outined dropdown-item-icon"></i> Suggest edits
-                    </a>
+                <a class="dropdown-item" href="#">
+                  <i class="tio-share dropdown-item-icon"></i> Share reports
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="tio-download-to dropdown-item-icon"></i> Download
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="tio-alt dropdown-item-icon"></i> Connect other apps
+                </a>
 
-                    <div class="dropdown-divider"></div>
+                <div class="dropdown-divider"></div>
 
-                    <span class="dropdown-header">Feedback</span>
+                <span class="dropdown-header">Feedback</span>
 
-                    <a class="dropdown-item" href="#">
-                      <i class="tio-chat-outlined dropdown-item-icon"></i> Report
-                    </a>
-                  </div>
-                </div>
-                <!-- End Unfold -->
+                <a class="dropdown-item" href="#">
+                  <i class="tio-chat-outlined dropdown-item-icon"></i> Report
+                </a>
               </div>
-              <!-- End Header -->
+            </div>
+            <!-- End Unfold -->
+          </div>
+          <!-- End Header -->
 
           <!-- Body -->
-          <div class="card-body card-body-height">
-            <ul class="list-group list-group-flush list-group-no-gutters">
-
-               <!-- List Item -->
-               <li class="list-group-item">
-                <div class="media">
-                  <!-- Form Check -->
-                  <div class="form-check form-check-inline align-self-center">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" id="clearco" class="custom-control-input">
-                      <label class="custom-control-label" for="clearco"></label>
-                    </div>
-                  </div>
-                  <!-- End Form Check -->
-                  <!-- Avatar -->
-                  <img class="avatar avatar-lg avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/clearcoDetail.png" alt="Image Description">
-                  <!-- End Avatar -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6 col-lg">
+                <!-- Stats -->
+                <div class="media align-items-center">
+                  <i class="tio-user-big-outlined tio-xl text-primary mr-3"></i>
 
                   <div class="media-body">
-                    <div class="row">
-                      <div class="col-7 col-md-5 order-md-1">
-                        <h5 class="mb-0 mt-2">Clearco</h5>
-                        <span class="d-block font-size-sm">
-                          <span class="badge badge-soft-info">
-                            Rev Share
-                          </span>
-                          <span class="badge badge-soft-warning">
-                            Term Note
-                          </span>
-                        </span>
-                      </div>
-                      <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
-                         <!-- Progress -->
-                        <div class="progress rounded-pill mb-2 mt-3">
-                          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-                        </div>
-
-
-            <!-- End Progress -->
-                      </div>
-
-                      <div class="col-auto col-md-3 order-md-2 mt-2">
-                        <span class="badge badge-soft-success badge-pill">65%</span>
-                      </div>
+                    <span class="d-block font-size-sm">Users</span>
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">34,413</h3>
+                      <span class="badge badge-soft-success ml-2">
+                        <i class="tio-trending-up"></i> 12.5%
+                      </span>
                     </div>
-                    <!-- End Row -->
                   </div>
                 </div>
-              </li>
-              <!-- End List Item -->
-              <!-- List Item -->
-              <li class="list-group-item">
-                <div class="media">
-                  <!-- Form Check -->
-                  <div class="form-check form-check-inline align-self-center">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" id="kickpay" class="custom-control-input">
-                      <label class="custom-control-label" for="kickpay"></label>
-                    </div>
-                  </div>
-                  <!-- End Form Check -->
-                  <!-- Avatar -->
-                  <img class="avatar avatar-lg avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/kickpay.png" alt="Image Description">
-                  <!-- End Avatar -->
+                <!-- End Stats -->
+
+                <div class="d-lg-none">
+                  <hr>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg column-divider-lg">
+                <!-- Stats -->
+                <div class="media align-items-center">
+                  <i class="tio-time-20-s tio-xl text-primary mr-3"></i>
 
                   <div class="media-body">
-                    <div class="row">
-                      <div class="col-7 col-md-5 order-md-1">
-                        <h5 class="mb-0 mt-2">Kickpay</h5>
-                        <span class="d-block font-size-sm">
-                          <span class="badge badge-soft-warning">Term Note</span></span>
-                      </div>
+                    <span class="d-block font-size-sm">Avg. session duration</span>
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">1m 3s</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Stats -->
 
-                      <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
-                       <!-- Progress -->
-            <div class="progress rounded-pill mb-2 mt-3">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
+                <div class="d-lg-none">
+                  <hr>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg column-divider-lg">
+                <!-- Stats -->
+                <div class="media align-items-center">
+                  <i class="tio-pages-outlined tio-xl text-primary mr-3"></i>
+
+                  <div class="media-body">
+                    <span class="d-block font-size-sm">Pages/Sessions</span>
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">1.78</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Stats -->
+
+                <div class="d-sm-none">
+                  <hr>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg column-divider-lg">
+                <!-- Stats -->
+                <div class="media align-items-center">
+                  <i class="tio-chart-donut-2 tio-xl text-primary mr-3"></i>
+
+                  <div class="media-body">
+                    <span class="d-block font-size-sm">Bounce rate</span>
+                    <div class="d-flex align-items-center">
+                      <h3 class="mb-0">62.9%</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Stats -->
+              </div>
             </div>
-
-
-
-            <!-- End Progress -->
-                      </div>
-
-                      <div class="col-auto col-md-3 order-md-2 mt-2">
-                        <span class="badge badge-soft-success badge-pill">50%</span>
-                      </div>
-                    </div>
-                    <!-- End Row -->
-                  </div>
-                </div>
-              </li>
-              <!-- End List Item -->
-
-              <!-- List Item -->
-              <li class="list-group-item">
-                <div class="media">
-                  <!-- Form Check -->
-                  <div class="form-check form-check-inline align-self-center">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" id="capchase" class="custom-control-input">
-                      <label class="custom-control-label" for="capchase"></label>
-                    </div>
-                  </div>
-                  <!-- End Form Check -->
-                  <!-- Avatar -->
-                  <img class="avatar avatar-lg avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/capchase2.png" alt="Image Description">
-                  <!-- End Avatar -->
-
-                  <div class="media-body">
-                    <div class="row">
-                      <div class="col-7 col-md-5 order-md-1">
-                        <h5 class="mb-0 mt-2">Capchase</h5>
-                        <span class="d-block font-size-sm">
-                          <span class="badge badge-soft-info">
-                            Rev Share
-                          </span>
-
-                        </span>
-                      </div>
-                      <div class="col-5 col-md-4 order-md-3 text-right mt-2 mt-md-0">
-                         <!-- Progress -->
-            <div class="progress rounded-pill mt-3">
-              <div class="progress-bar" role="progressbar" style="width: 37%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-
-            </div>
-
-
-            <!-- End Progress -->
-                      </div>
-
-                      <div class="col-auto col-md-3 order-md-2 mt-2">
-                        <span class="badge badge-soft-success badge-pill">37%</span>
-                      </div>
-                    </div>
-                    <!-- End Row -->
-                  </div>
-                </div>
-              </li>
-              <!-- End List Item -->
-
-              <!-- List Item -->
-              <li class="list-group-item">
-                <div class="media">
-                  <!-- Form Check -->
-                  <div class="form-check form-check-inline align-self-center">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" id="yardline" class="custom-control-input">
-                      <label class="custom-control-label" for="yardline"></label>
-                    </div>
-                  </div>
-                  <!-- End Form Check -->
-                  <!-- Avatar -->
-                  <img class="avatar avatar-lg avatar-circle mr-2" src="@@autopath/assets/img/offer-partners/yardlineDetail.png" alt="Image Description">
-                  <!-- End Avatar -->
-
-                  <div class="media-body">
-                    <div class="row">
-                      <div class="col-7 col-md-5 order-md-1">
-                        <h5 class="mb-0 mt-2">Yardline</h5>
-                        <span class="d-block font-size-sm">
-                          <span class="badge badge-soft-info">
-                            Rev Share
-                          </span>
-                          <span class="badge badge-soft-warning">
-                            Term Note
-                          </span>
-                        </span>
-                      </div>
-                      <div class="col-5 col-md-4 order-md-3 text-right mt-5 mt-md-0 ">
-                        <!-- Progress -->
-            <div class="progress rounded-pill mt-3">
-              <div class="progress-bar" role="progressbar" style="width: 18%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="Gross value"></div>
-
-            </div>
-
-
-            <!-- End Progress -->
-                      </div>
-
-                      <div class="col-auto col-md-3 order-md-2 mt-2">
-                        <span class="badge badge-soft-danger badge-pill">18%</span>
-                      </div>
-                    </div>
-                    <!-- End Row -->
-                  </div>
-                </div>
-              </li>
-              <!-- End List Item -->
-
-               <!-- List Item -->
-
-              <!-- End List Item -->
-
-               <!-- List Item -->
-
-              <!-- End List Item -->
-            </ul>
+            <!-- End Row -->
           </div>
           <!-- End Body -->
+
+          <!-- Vector Map -->
+          <div style="height: 15rem;">
+            <div class="js-jvectormap jvectormap-custom card-jvectormap"
+                 data-hs-jvector-map-options='{
+                   "tipCentered": true,
+                   "focusOn": {
+                     "x": 0.5,
+                     "y": 0.5,
+                     "scale": 1.5
+                   },
+                   "regionStyle": {
+                    "initial": {
+                      "fill": "rgba(55, 125, 255, .3)"
+                    },
+                    "hover": {
+                      "fill": "@@vars.style.color"
+                    }
+                   },
+                   "backgroundColor": "#132144",
+                   "markerStyle": {
+                     "initial": {
+                       "stroke-width": 0,
+                       "fill": "rgba(255,255,255,.5)",
+                       "stroke": "rgba(255,255,255,.5)",
+                       "r": 6
+                     },
+                     "hover": {
+                      "stroke-width": 0,
+                      "fill": "#fff",
+                      "stroke": "#fff"
+                     }
+                    }
+                   }'></div>
+          </div>
+          <!-- End Vector Map -->
         </div>
+       
         <!-- End Card -->
 
           </div>
